@@ -1,33 +1,22 @@
-
-/**
- * Write a description of class FundamentalsP2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import javax.swing.JOptionPane;
 public class FundamentalsP2
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class FundamentalsP2
-     */
-    public FundamentalsP2()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+     public static void main ( String args[] )
+     {
+       String input1 = JOptionPane.showInputDialog( "Type a number: " );
+       
+       String input2 = JOptionPane.showInputDialog( "Type a number again!: " );
+       
+       int a = Integer.parseInt(input1);
+       int b = Integer.parseInt(input2);
+       
+       if (a > b) 
+        {
+            System.out.println( " The value of a is" + a + "and it greater than
+      
+       
+     
+        }// end method main
+       
+        
+    }// end  class __
