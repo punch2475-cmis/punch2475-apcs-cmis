@@ -12,11 +12,15 @@ public class FundamentalsP2
        
        if (a > b) 
         {
-            System.out.println( " The value of a is" + a + "and it greater than
-      
-       
-     
+            System.out.println( " The value of a is" + a + "and it greater than b whose value is " + b + ".");
+        }
+        else if (a < b )
+        {
+            System.out.println( "The value of a is" + a + " and it less than b whose value is "+b+ ".");
+        }
+        else 
+        {System.out.println( " The value of a is" + a + " and it is equal to b whose value is" + b + ".");
         }// end method main
-       
+    }
         
     }// end  class __
