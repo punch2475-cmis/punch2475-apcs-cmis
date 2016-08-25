@@ -1,17 +1,19 @@
 public class FundamentalsP6
-{ public static void main (String [] arg)
     {
-        int [] array = new int[50];
-        int x = array.length; 
-        for( int index = 0; index < x; index++)
+     public static void main( String[] args )
         {
-            array[index] = (int)(Math.random()*100);
+        
+        int [] randomnumbers = new int[50];
             
-        }
-        for (int index = 0; index < x; index++)
+       for(int index = 0;index<randomnumbers.length;index++)
         {
-            System.out.println(array[index]);
-        }
-    }
+            randomnumbers[index] =  (int) ( Math.random()*101);
+        } 
+        
+       for(int index = 0;index<randomnumbers.length;index++)
+        {
+            System.out.print( randomnumbers[index] + " " );
+        } 
+}
 }
 
