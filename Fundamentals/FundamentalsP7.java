@@ -1,7 +1,15 @@
 public class FundamentalsP7
 { public static void main (String [] arg)
     {
-        int [] randomNumber = new int[50];
+        int [] array = new int[10];
+        int positive =0;
+        int negative =0;
+        for(int index=0; index<0; index++)
+        {
+            array [index] = (int)(array.length*Math.random());
+            
+            
+        }
         
     }
 }

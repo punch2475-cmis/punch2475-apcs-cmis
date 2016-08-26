@@ -1,19 +1,22 @@
+
 public class Problem1{
     public static void main (String [] arg)
     {
-       int [] randomNumber = new int [1000000];
-       int x = randomNumber.length;
-       
-        
-    }
-}
+       int [] array = new int [1000000];
 
-       /*if (x % 3 == 0 && x%5 == 0 && x%7 == 0 && x%11==0)
+       for (int index = 0; index < 1; index++){
+        array [index] = (int)(array.length*Math.random());
+       if (index % 3 == 0 && index %5 == 0 && index%7 == 0 && index%11==0)
        {
-           System.out.println(randomNumber);\
+           System.out.println(array[index]);
         }
        
         else
         {
             System.out.println("...");
-        }/*
+        }
+        
+    }
+}
+}
+
