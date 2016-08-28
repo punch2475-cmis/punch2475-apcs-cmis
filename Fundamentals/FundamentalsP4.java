@@ -5,9 +5,7 @@ public class FundamentalsP4
     {
         for( int ctr = 1; ctr <= 10; ctr ++)
         {
-            Random r= new Random();
-            int i1= r.nextInt((ctr*ctr)- ctr); 
-            System.out.println ( ctr +"\t" + ctr*ctr + "\t" +i1 );
+            System.out.println ( ctr +"\t" + ctr*ctr + "\t" +(int)(ctr+ ctr *Math.random()) );
         }//end for
     }
 }

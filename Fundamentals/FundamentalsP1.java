@@ -10,7 +10,7 @@ public class FundamentalsP1
        
        System.out.println( "My favorite movie is Harry Potter");
        
-       System.out.println( "My favorite musical group is " );
+       System.out.println( "My favorite musical group is  got7" );
        
      
         }// end method main
