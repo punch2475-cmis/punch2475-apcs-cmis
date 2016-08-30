@@ -14,6 +14,8 @@ public class BinaryConverter
     }
     
     public static int bin2dec(String bin){
+        for(
+
         return 0;
     }
     
