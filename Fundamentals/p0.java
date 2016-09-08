@@ -10,12 +10,15 @@ public class p0
     public static String dec2bin(int dec2){
         for (int index = 0; index <= dec2 ;dec2/=2)
         {
-            if( dec2 > 0)
-            {
-                System.out.print(dec2%2);
+            if (dec2 >= 1){
+                int x = dec2%2;
+           }
+           else if ( dec2 ==1 ){
+               break; 
+               int y = ((int)x) *10;
+               System.out.print(y);
             }
 
-        
         }
         return "";
     }
@@ -49,3 +52,4 @@ int newdec = dec2/2;
 System.out.println(dec2%2);
 }
 int newdec = dec2/2;*/
+//
