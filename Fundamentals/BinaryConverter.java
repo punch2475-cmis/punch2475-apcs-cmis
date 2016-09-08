@@ -32,3 +32,29 @@ public class BinaryConverter
     }*/
         
 }
+    public static String dec2bin(int dec2){
+        for (int index = 0; index <= dec2 ;dec2/=2){
+            int runtime= 0;
+          if( runtime == 0)
+          {
+              System.out.print(dec2%2);
+              runtime++;
+            }
+          else if ( runtime >0 || newdec2 >= 0)
+          {
+              if(newdec2%2 ==1){
+                  System.out.print(newdec2%2);
+ 
+              }
+              else if (newdec2 %2 ==0){
+                  System.out.print(newdec2%2);
+                }
+            
+            }
+         
+       }
+        return "";
+          }
+        
+       
+    }
