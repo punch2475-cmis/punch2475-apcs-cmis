@@ -15,9 +15,9 @@ public class p0
             newdec2[index++]= dec2%2;
             dec2 = dec2/2;
         }
-        for(int newi = index; newi >=0;index--)
+        for(int newi = index; newi >=0;newi--)
         {
-            System.out.print(newdec2[index]);
+            System.out.print(newdec2[newi]);
             
         }
         
