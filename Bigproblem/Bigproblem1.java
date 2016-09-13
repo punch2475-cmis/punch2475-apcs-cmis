@@ -9,10 +9,16 @@ public class Bigproblem1
         int sum = 0;
         int big =0; 
         int small =0;
-
+        int total = 0;
+        //for (i = 1; i < randomnumbers; i++)
+        //{
+          //  randomnumbers[index] =(int) ( Math.random()*100); 
+            //randomnumbers[total]++;
+        //}
+        //for( total =2; total <= randomnumber
         for (int index =0; index< randomnumbers.length; index++)
         {
-            randomnumbers[index] =(int) ( Math.random()*100);
+            
             System.out.println( randomnumbers[index]);
             sum += randomnumbers[index];
             int newran = randomnumbers[index];
