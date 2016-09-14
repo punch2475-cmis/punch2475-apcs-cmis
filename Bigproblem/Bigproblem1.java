@@ -10,15 +10,18 @@ public class Bigproblem1
         int big =0; 
         int small =0;
         int total = 0;
-        //for (i = 1; i < randomnumbers; i++)
-        //{
-          //  randomnumbers[index] =(int) ( Math.random()*100); 
-            //randomnumbers[total]++;
-        //}
-        //for( total =2; total <= randomnumber
-        for (int index =0; index< randomnumbers.length; index++)
+        int [] num = new int [99];
+        int index =0;
+        int frequency =0;
+        int count =0;
+        for (int i = 0; i < num.length; i++)
         {
-            
+            num[total]++;
+            System.out.println(num[total]+":");
+        }//it work 
+        for (index =0; index< randomnumbers.length; index++)
+        {
+             randomnumbers[index] =(int) ( Math.random()*100);
             System.out.println( randomnumbers[index]);
             sum += randomnumbers[index];
             int newran = randomnumbers[index];
@@ -41,14 +44,13 @@ public class Bigproblem1
                     big = randomnumbers[index];
                 }
             }
-            
         }
-        int avg = sum/b;
+        double avg = (double) sum/b;
         System.out.println("Sum =" + sum);
         System.out.println("Avg =" +avg);
         System.out.println("Smallest num = " + small);
         System.out.println("Biggest num = " + big);
-        
+        System.out.println("MODE =" + count);
         
         //sum += randomnumbers 
         
@@ -60,7 +62,7 @@ public class Bigproblem1
 /*
  * //ask user to type number
  * //random number 0-99 
- * count how many time it occur
+ * //print 1-99
  * print histogram
  * //print minimum 
  * //print max
