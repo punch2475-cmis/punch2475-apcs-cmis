@@ -8,8 +8,7 @@ public class Test1
         double [] randomnumbers = new double [num];
         int [] randomnumbers2 = new int [num];
         int [] counts = new int [num];
-        int index =0;
-        for(   index = 0; index < randomnumbers.length; index++){
+        for( int  index = 0; index < randomnumbers.length; index++){
             randomnumbers[index] = ((double)((Math.random() * 50) +1));
             counts[randomnumbers2[index]]++;
             
@@ -43,6 +42,6 @@ public class Test1
 
             }
         //end for loop
-        //System.out.println( counts[randomnumbers[index]]);
+        
     }//end main
 }//end class
