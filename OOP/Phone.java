@@ -10,32 +10,34 @@
         this.camera = camera;
     }
     public Phone(int app){
+        this.brand = "Apple";
+        this.camera = (double)(Math.random()*12);
+        this.storage = app *12
         while(app >0){
             if (app > 1){
-                System.out.println(" You have" + app + "applications.");
+                System.out.println(" You have " + app + " applications.");
                 app--;
             }
             else {
                 System.out.println ("You have zero application.");
                 app--;
             }
-        }
-        this.battery = (int)(Math.random() *200);
-        this.camera = (double)(Math.random()*12);
-        this.storage = app *12000;
-    }
-    public static void main(String [] arg)
+        }//end while loop
+    }//end Phone
+    /*public static void main(String [] arg)
     {
         Phone p1 = new Phone("Samsung",52,1.8);
         System.out.println(p1);
-        System.out.println(p1.brand);
-        System.out.println(p1.storage);
-        System.out.println(p1.camera);
+        //System.out.println(p1.brand);
+        //System.out.println(p1.storage);
+        //System.out.println(p1.camera);
         
         Phone p2 = new Phone(9);
         System.out.println(p2);
-        System.out.println(p2.battery);
-        System.out.println(p2.camera);
-        System.out.println(p2.storage);
-    }
-}
+    }*/
+    
+    public String toString(){
+        String output ="Brand: " +  brand + "\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel";
+        return output;
+    }//end toString
+}//end class

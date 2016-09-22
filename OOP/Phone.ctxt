@@ -3,6 +3,7 @@ comment0.params=brand\ storage\ camera
 comment0.target=Phone(java.lang.String,\ int,\ double)
 comment1.params=app
 comment1.target=Phone(int)
-comment2.params=arg
-comment2.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=public\ static\ void\ main(String\ []\ arg)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Phone\ p1\ \=\ new\ Phone("Samsung",52,1.8);\n\ \ \ \ \ \ \ \ System.out.println(p1);\n\ \ \ \ \ \ \ \ //System.out.println(p1.brand);\n\ \ \ \ \ \ \ \ //System.out.println(p1.storage);\n\ \ \ \ \ \ \ \ //System.out.println(p1.camera);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ Phone\ p2\ \=\ new\ Phone(9);\n\ \ \ \ \ \ \ \ System.out.println(p2);\n}
 numComments=3
