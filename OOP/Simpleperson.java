@@ -1,8 +1,18 @@
  public class Simpleperson{
-    private String name;
-    public static void main(String [] arg)
-    {
-        Simpleperson p1 = new Simpleperson();
-        System.out.println(p1);
+    private double age = 50;
+    private boolean gender = true;
+    int yearleft; 
+    public Simpleperson(int age, boolean gender){
+
+        if (gender)
+        {
+            double lifeexpectancy = 86.8;
+            yearleft = lifeexpectancy - age;
+        }
+        else{
+            double lifeexpectancy = 80.5;
+            yearleft = lifeexpectancy - age;
+        }
+        return yearleft; 
     }
 }
