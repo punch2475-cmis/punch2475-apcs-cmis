@@ -4,6 +4,7 @@
     private double camera = 10.9; 
     private int battery = 5000;
     private boolean onoff1 = true; 
+    private int app; 
     public Phone(String brand, int storage, double camera){
         this.brand = brand;
         this.storage= storage;
@@ -101,5 +102,17 @@
         else{
             return "Male";
         }*/
+    public int getStorageleft(){
+        int left;
+        if (){
+        }
+        else{
+        }
+    }
+        /* storage left 
+         * (# of app *2) - storage    
+         */
+   
+        
      
 }//end class

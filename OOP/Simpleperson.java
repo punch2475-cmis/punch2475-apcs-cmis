@@ -1,9 +1,11 @@
  public class Simpleperson{
-    private double age = 50;
+    private double age = 50.0;
     private boolean gender = true;
-    int yearleft; 
-    public Simpleperson(int age, boolean gender){
-
+    double yearleft; 
+    public Simpleperson(double age, boolean gender){
+        this.age= age; 
+        this.gender = gender;
+        
         if (gender)
         {
             double lifeexpectancy = 86.8;
@@ -13,6 +15,10 @@
             double lifeexpectancy = 80.5;
             yearleft = lifeexpectancy - age;
         }
-        return yearleft; 
+        return ;
+    }
+    public static void main(String []arg ){
+        Simpleperson p1 = new Simpleperson(45.5, true);
+        System.out.println(p1);
     }
 }

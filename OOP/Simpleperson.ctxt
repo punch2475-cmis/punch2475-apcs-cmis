@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.params=age\ gender
-comment0.target=Simpleperson(int,\ boolean)
-numComments=1
+comment0.target=Simpleperson(double,\ boolean)
+comment1.params=arg
+comment1.target=void\ main(java.lang.String[])
+numComments=2
