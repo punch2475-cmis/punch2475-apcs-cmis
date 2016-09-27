@@ -1,10 +1,18 @@
- public class Phone{
+ 
+import javax.swing.JOptionPane;
+public class Phone{
     private String brand = "samsung";
     private int storage= 50; 
     private double camera = 10.9; 
     private int battery = 5000;
     private boolean onoff1 = true; 
-    private int app; 
+    private int app = 10; 
+    private int appStorage; 
+    private int left;
+    private int Storageleft; 
+    private String Password = "123456789";
+    public static final int APP = 12; 
+    public static final int STORAGE = 128; 
     public Phone(String brand, int storage, double camera){
         this.brand = brand;
         this.storage= storage;
@@ -73,6 +81,26 @@
         }
         return onOff; 
     }
+    public int getStorageleft(){
+        int left;
+        if (storage > 0){
+            left = storage-(app * 2);
+            //System.out.println("There are " + left + " GB left in your phone.");
+        }
+        else{
+            left = 0;
+            //System.out.println("There are no more space left");
+        }
+        return left;
+    }
+    public String getPassword(){
+        int tries;
+        String input1 = JOptionPane.showInputDialog( "Type a number: " );
+        if (password = "123456789"){
+        }
+        else{
+        }
+    }
     /*public String getNewBrand(){
         String NewBrand;
         if (brand.length 
@@ -90,7 +118,7 @@
     }*/
     
     public String toString(){
-        String output ="Brand: " +  brand + "\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel";
+        String output ="Brand: " +  brand + "\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel" + "\nThere are " + getStorageleft() + " GB in your phone.";
         return output;
     }//end toString
     
@@ -102,13 +130,9 @@
         else{
             return "Male";
         }*/
-    public int getStorageleft(){
-        int left;
-        if (){
-        }
-        else{
-        }
-    }
+
+    
+    
         /* storage left 
          * (# of app *2) - storage    
          */

@@ -12,6 +12,6 @@ public class PhoneApp{
         //System.out.println(p2.brand);
         //System.out.println(p2.storage);
         //System.out.println(p2.camera);
-        
+        System.out.println(p2.getStorageleft());
     }//end main
 }// end class
