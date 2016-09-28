@@ -10,7 +10,8 @@ public class Phone{
     private int appStorage; 
     private int left;
     private int Storageleft; 
-    private String Password = "123456789";
+    private String passFail;
+    public static final String Password = "123456789";
     public static final int APP = 12; 
     public static final int STORAGE = 128; 
     public Phone(String brand, int storage, double camera){
@@ -93,13 +94,19 @@ public class Phone{
         }
         return left;
     }
-    public String getPassword(){
-        int tries;
+    public String getTries(){
+        int tries =0;
+         
         String input1 = JOptionPane.showInputDialog( "Type a number: " );
-        if (password = "123456789"){
+        for ( tries = 0; tries < 5; tries++){
+        if (input1 == Password){
+            passFail = "PASS";
         }
         else{
+             passFail = "FAIL TRY AGAIN";
         }
+      }
+      return passFail; 
     }
     /*public String getNewBrand(){
         String NewBrand;
@@ -117,10 +124,10 @@ public class Phone{
         System.out.println(p2);
     }*/
     
-    public String toString(){
-        String output ="Brand: " +  brand + "\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel" + "\nThere are " + getStorageleft() + " GB in your phone.";
+        public String toString(){
+        String output ="Brand: " +  brand + "\nPhone on/off " +getonOff() +"\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel" + "\nThere are " + getStorageleft() + " GB in your phone.";
         return output;
-    }//end toString
+        }//end toString
     
     /*public String getGenderWord(){
         if (gender = true)
@@ -135,8 +142,5 @@ public class Phone{
     
         /* storage left 
          * (# of app *2) - storage    
-         */
-   
-        
-     
+        */
 }//end class

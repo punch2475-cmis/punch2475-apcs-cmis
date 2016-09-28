@@ -8,8 +8,10 @@ comment10.target=java.lang.String\ getonOff()
 comment11.params=
 comment11.target=int\ getStorageleft()
 comment12.params=
-comment12.target=java.lang.String\ toString()
-comment12.text=public\ String\ getNewBrand(){\n\ \ \ \ \ \ \ \ String\ NewBrand;\n\ \ \ \ \ \ \ \ if\ (brand.length\ \n\ \ \ \ }\n\ \ \ \ /*public\ static\ void\ main(String\ []\ arg)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Phone\ p1\ \=\ new\ Phone("Samsung",52,1.8);\n\ \ \ \ \ \ \ \ System.out.println(p1);\n\ \ \ \ \ \ \ \ //System.out.println(p1.brand);\n\ \ \ \ \ \ \ \ //System.out.println(p1.storage);\n\ \ \ \ \ \ \ \ //System.out.println(p1.camera);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ Phone\ p2\ \=\ new\ Phone(9);\n\ \ \ \ \ \ \ \ System.out.println(p2);\n}
+comment12.target=java.lang.String\ getTries()
+comment13.params=
+comment13.target=java.lang.String\ toString()
+comment13.text=public\ String\ getNewBrand(){\n\ \ \ \ \ \ \ \ String\ NewBrand;\n\ \ \ \ \ \ \ \ if\ (brand.length\ \n\ \ \ \ }\n\ \ \ \ /*public\ static\ void\ main(String\ []\ arg)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Phone\ p1\ \=\ new\ Phone("Samsung",52,1.8);\n\ \ \ \ \ \ \ \ System.out.println(p1);\n\ \ \ \ \ \ \ \ //System.out.println(p1.brand);\n\ \ \ \ \ \ \ \ //System.out.println(p1.storage);\n\ \ \ \ \ \ \ \ //System.out.println(p1.camera);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ Phone\ p2\ \=\ new\ Phone(9);\n\ \ \ \ \ \ \ \ System.out.println(p2);\n}
 comment2.params=
 comment2.target=java.lang.String\ getBrand()
 comment3.params=newBrand
@@ -26,4 +28,4 @@ comment8.params=
 comment8.target=int\ getBattery()
 comment9.params=newBattery
 comment9.target=void\ setBattery(int)
-numComments=13
+numComments=14
