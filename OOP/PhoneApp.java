@@ -1,7 +1,7 @@
 public class PhoneApp{
     public static void main(String [] arg)
     {
-        //Phone p1 = new Phone("Samsung",52,1.8);
+        Phone p1 = new Phone("Samsung",52,1.8);
         //System.out.println(p1);
         //System.out.println(p1.brand);
         //System.out.println(p1.storage);
@@ -14,5 +14,6 @@ public class PhoneApp{
         //System.out.println(p2.camera);
         //System.out.println(p2.getStorageleft());
         System.out.println(p2.getTries());
+        System.out.println(p2.equals(p2));
     }//end main
 }// end class

@@ -1,4 +1,3 @@
- 
 import javax.swing.JOptionPane;
 public class Phone{
     private String brand = "samsung";
@@ -128,7 +127,14 @@ public class Phone{
         String output ="Brand: " +  brand + "\nPhone on/off " +getonOff() +"\nStorage: " + storage +" GB" + "\nCamera: " + camera + " mega-pixel" + "\nThere are " + getStorageleft() + " GB in your phone.";
         return output;
         }//end toString
-    
+    public boolean equals(Phone other){
+        if( this.storage == other.storage){
+            return true; 
+        }
+        else {
+            return false; 
+        }
+    }
     /*public String getGenderWord(){
         if (gender = true)
         {
