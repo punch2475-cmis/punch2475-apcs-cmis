@@ -1,10 +1,12 @@
 public class StudentOutput
 {
    public static void main(String [] arg){
-       StudentInfo s1 = new StudentInfo("sdfghjk" , 12);
+       
+       StudentInfoTester s1 = new StudentInfoTester("sdfghjk" , 12);
        System.out.print(s1);
-       StudentGrade g1 = new StudentGrade("sadf","dfghj","drfghj","wdfgh","esdfghj");
-       System.out.print(g1.subject1);
+       System.out.println("\n");
+      
+
        
     }
 }

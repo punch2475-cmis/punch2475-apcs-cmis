@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=nameInput\ gradeInput
+comment0.target=StudentInfoTester(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ \ \ \ public\ int\ getGrade()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ return\ grade;\n\ \ \ \ }//end\ getter\ method\ \n\n\ \ \ \ public\ void\ setGrade(int\ newGrade)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ grade\ \=\ (int)(Math.random()*11)+1;\n\ \ \ \ \ \ \ \ grade\ \=\ newGrade;\n\ \ \ \ }//end\ setter\ method\ \n\ \ \ \ \n\ \ \ \ \ \ \ \ public\ StudentInfoTester(\ String\ name\ )\n\ \ \ \ {\n\ \ \ \ \ \ \ \ this.name\ \=\ JOptionPane.showInputDialog(\ "Type\ your\ name\:\ "\ );\n\ \ \ \ \ \ \ \ this.grade\ \=\ grade;\n\ \ \ \ \ \ \ \ //name\ is\ entered\ manually\n\ \ \ \ \ \ \ \ //Grade\ is\ randomnized\n\ \ \ \ }\n
+numComments=2
