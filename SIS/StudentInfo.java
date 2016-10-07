@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-
 public class StudentInfo
 {
 
@@ -12,7 +11,8 @@ public class StudentInfo
         this.grade = Integer.parseInt(JOptionPane.showInputDialog( "Type your grade: " ));
         //both info entered manually
     }//end constructor
-
+    /*public String getName{
+    }*/
     public String toString()
     {
         String output = "Student Name: " + name + "\nGrade: " + grade;
