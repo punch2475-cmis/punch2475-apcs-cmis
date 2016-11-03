@@ -14,10 +14,10 @@ public class student
     {
         return grades;
     }//end method getGrades
-    public Grade[] minMaxGrades()
+    /*public Grade[] minMaxGrades()
     {
         String [] value = new String[grades.length];
-        String [] gradeFinal = newgrade;
-    }//end method minMaxGrades
+        //String [] gradeFinal = newgrade;
+    }//end method minMaxGrades*/
 }//end class
 

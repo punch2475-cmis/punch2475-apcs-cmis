@@ -21,6 +21,7 @@ public class Course{
     {
         return name;
     }//end method getName
+    
     //other non-static methods
     public String toString()
     {
