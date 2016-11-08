@@ -17,10 +17,10 @@ public class grid
                 System.out.println(grid[y][x]);
             }
         }
-        for(int y = 0; y < grid[0].length; y++){
+        /*for(int y = 0; y < grid[0].length; y++){
             for(int x =0; x < grid[y].length; x++){
                 System.out.print(grid[y][x]);
             }
-        }
+        }*/
     }
 }
