@@ -14,20 +14,18 @@ public class Array2D2
                 System.out.print(grid[y][x]+ "  ");
                 rowsum += num ; 
                 num++;
-  
+                totalsum += grid[y][x];
             }
             System.out.println("\n");
             System.out.println("Row total " + rowsum);
+            System.out.println ("total sum" + totalsum);
             }
-         for(int row = 0; row < grid[0].length; row++){
+         for(int x = 0; x < grid[0].length; x++){
              int colsum =0;
-            for(int col =0; col < grid.length; col++){
-                grid[col][row] = colnum;
-                colsum += colnum;
-                colnum++;
-
+            for(int y =0; y < grid.length; y++){
+                colsum += grid[y][x];
             }
-            System.out.println(colsum);
+            System.out.println("Col total " + colsum + " ");
         }
         }
 
