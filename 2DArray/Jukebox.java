@@ -31,9 +31,10 @@ public class Jukebox
         {
             for(int row = 0; row < songList.length; row++)
             {
-                if(songList[row][col].getRating == rating)
+                MySong song = songList[row][col];
+                if(songList[row][col].getRating() == rating)
                 {
-                    System.out.println(MySong.getName());
+                    System.out.println(song.getName());
 
                 } 
             } 
@@ -48,7 +49,7 @@ public class Jukebox
         {
             for( int y = 0; y < songList[0].length; y++ )
             {
-                output += x + "\n";
+                output += songList[x][y].getName() + "\n";
             }
         }
 
