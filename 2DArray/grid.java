@@ -10,6 +10,15 @@ public class grid
                 System.out.println(grid[y][x]);
             }
         }
+        // column count 
+        /*for(int row =0; row<grid.length;row++)
+        {
+            for(int col = 0; col < grid[0].length ; col++)
+            {
+                System.out.print(grid[row][col] + "  ");
+            }
+            System.out.print("\n");
+        }*/
         
         
         for(int x = 0; x < grid[0].length; x++){
@@ -23,4 +32,22 @@ public class grid
             }
         }
     }
+    /* for(int row =0; row<grid.length;row++)
+        {
+            for(int col = 0; col < grid[0].length ; col++)
+            {
+                if(grid[row][col]==0)
+                {
+                    grid[row][col] = grid[rowindex][colindex];
+                }
+                else if(grid[row][col]==grid[rowindex][colindex])
+                {
+                    grid[row][col] =0;
+                }
+                System.out.print(grid[row][col] + "  ");
+            }
+            System.out.print("\n");
+        }
+    }*/
+}
 }
