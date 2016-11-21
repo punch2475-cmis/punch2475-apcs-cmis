@@ -47,16 +47,16 @@ public class Test
     public int[][] getNineAndFriends(){
         int[][] result = new int[3][3];
         int index =0;
-        int [][]Newresult = 
-        //int ValueofNineRow = 0;
-        
-        int ValueofNineCol = 0;
+        int [][]Newresult = new int [3][3];
+        int ValueofNineRow =0;
+        int ValueofNineCol =0;
         for ( int y = 0; y < result.length; y++ ){
             for ( int x = 0; x < result[y].length; x++ ){
                 ValueofNineRow =randomNineRow -index;
                 ValueofNineCol =randomNineCol -index;
+                //Newresult[y][x]= result[ValueofNineRow][ValueofNineCol];
             }
-            Newresult = result[ValueofNineRow][ValueofNineCol];
+            //result = Newresult;
         }
         
         
