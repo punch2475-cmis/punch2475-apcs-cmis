@@ -16,13 +16,14 @@ public class Test
     int randomNineCol = (int)(Math.random() *5);
     public void showArray(){
         int random = 10;
-
+        // 1pt ------ loops over every item in 2d array
         for ( int y = 0; y < nums.length; y++ ){
             for ( int x = 0; x < nums[y].length; x++ ){
-                nums[y][x] = (int)(Math.random() * 10);
+                nums[y][x] = (int)(Math.random() * 10);// 1pt ------ sets item to correct possible value
                 if(nums[y][x] == 9){
                     nums[y][x] = (int)(Math.random() * 6);
                 }
+                // 1pt ------ sets exactly 1 random item to 9
                 if (randomNineRow == 0 ){
                     randomNineRow = (int)(Math.random() *6);
                     randomNineCol = (int)(Math.random() *6);
@@ -35,11 +36,11 @@ public class Test
                     randomNineRow = (int)(Math.random() *5);
                     randomNineCol = (int)(Math.random() *5);
                 }
-                nums[randomNineRow][randomNineCol] = 9;
+                nums[randomNineRow][randomNineCol] = 9;        // 1pt ------ sets exactly 1 random item to 9
                 System.out.print(nums[y][x]);
             }
             System.out.println();
-
+            // 1pt ------ prints out 2d array in row major order
         }
         System.out.println(randomNineRow + "\t"+ (randomNineCol));
     }  
@@ -50,6 +51,7 @@ public class Test
         int [][]Newresult = new int [3][3];
         int ValueofNineRow =0;
         int ValueofNineCol =0;
+        // 1pt ------ correctly determines location of 9
         for ( int y = 0; y < result.length; y++ ){
             for ( int x = 0; x < result[y].length; x++ ){
                 ValueofNineRow =randomNineRow -index;
@@ -58,9 +60,9 @@ public class Test
             }
             //result = Newresult;
         }
-        
-        
-        
+        // 0pt ------- gets correct numbers in 2d result array
+        // 0pt ------- gets numbers in column major order in 2d result array 
+
         //Modify this method so that it returns the 9 and the 8 digits surrounding it in column major order
         return result;
     }
