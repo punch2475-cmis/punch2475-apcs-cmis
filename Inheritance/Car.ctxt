@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=name\ brand\ color
+comment0.target=Car(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getColor()
+comment2.params=newColor
+comment2.target=void\ setColor(java.lang.String)
+comment3.params=
+comment3.target=int\ getO()
+comment4.params=newO
+comment4.target=void\ setO(int)
+comment5.params=newName
+comment5.target=void\ setName(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
