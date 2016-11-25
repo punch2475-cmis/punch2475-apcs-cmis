@@ -38,7 +38,7 @@ public class APP
             }
             else if (vehicles[i] instanceof Car){
                 Car t = (Car) vehicles[i];
-                t.last(456);
+                 t.last(2500);
                 
             }
             System.out.println(vehicles[i]);

@@ -3,7 +3,7 @@ public class Car extends Vehicle
 {
     private String color; 
     private int o;
-    private int sday;
+    private int sday= (int)Math.random() *1000;
     private int dday = 3600;
     private int lastfor;
     public Car(String name,String brand, String color){
@@ -23,7 +23,13 @@ public class Car extends Vehicle
     }
     public void setO(int newO){
         o = newO;
-    }    
+    }
+    public int getSday(){
+        return sday;
+    }
+    public void setSday(int newSday){
+        sday = newSday;
+    }
     public void setName(String newName)
     {
         super.setName(newName);
