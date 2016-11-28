@@ -1,6 +1,8 @@
 public class APP
 {
     public static void main (String [] args){
+        
+        int year =0;
         /*Vehicle v = new Vehicle("a", "b");
         System.out.println(v);
          */
@@ -38,10 +40,10 @@ public class APP
             }
             else if (vehicles[i] instanceof Car){
                 Car t = (Car) vehicles[i];
-                 t.last(2500);
+                year = t.last(2500);
                 
             }
-            System.out.println(vehicles[i]);
+            System.out.println(vehicles[i] + " , " + year);
         }
     }
 }
