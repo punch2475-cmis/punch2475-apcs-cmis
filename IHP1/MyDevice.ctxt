@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=memory\ color\ earphoneJack\ price
+comment0.target=MyDevice(int,\ java.lang.String,\ boolean,\ int)
+comment1.params=
+comment1.target=int\ getMemory()
+comment2.params=newMemory
+comment2.target=void\ setMemory(int)
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+comment4.params=newColor
+comment4.target=void\ setColor(java.lang.String)
+comment5.params=
+comment5.target=boolean\ getEarphoneJack()
+comment6.params=newEarphoneJack
+comment6.target=void\ setEarphoneJack(boolean)
+comment7.params=
+comment7.target=int\ getPrice()
+comment8.params=newPrice
+comment8.target=void\ setPrice(int)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

@@ -1,33 +1,30 @@
-
-/**
- * Write a description of class MyPod here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyPod
+public class MyPod extends MyDevice
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int NumberOfSong;
+    private boolean touchScreen;
 
-    /**
-     * Constructor for objects of class MyPod
-     */
-    public MyPod()
+    public MyPod(int memory, String color, boolean earphoneJack, int price, int NumberOfSong, boolean touchScreen)
     {
-        // initialise instance variables
-        x = 0;
+        super(memory,color, earphoneJack, price);
+        this.NumberOfSong = NumberOfSong;
+        this.touchScreen = touchScreen;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getNumberOfSong(){
+        return NumberOfSong;
+    }
+
+    public void setNumberOfSong(int newNumberOfSong){
+        NumberOfSong = newNumberOfSong;
+    } 
+    public boolean gettouchScreen(){
+        return touchScreen;
+    }
+
+    public void settouchScreen(boolean newtouchScreen){
+        touchScreen = newtouchScreen;
+    }
+    public String toString(){
+        return String.format("%s \n The pod has: %s songs \n The pod has touch screen: %s", super.toString(), NumberOfSong, touchScreen);
     }
 }

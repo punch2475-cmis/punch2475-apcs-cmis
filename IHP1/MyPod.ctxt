@@ -1,8 +1,14 @@
 #BlueJ class context
-comment0.params=
-comment0.target=MyPod()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MyPod\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=2
+comment0.params=memory\ color\ earphoneJack\ price\ NumberOfSong\ touchScreen
+comment0.target=MyPod(int,\ java.lang.String,\ boolean,\ int,\ int,\ boolean)
+comment1.params=
+comment1.target=int\ getNumberOfSong()
+comment2.params=newNumberOfSong
+comment2.target=void\ setNumberOfSong(int)
+comment3.params=
+comment3.target=boolean\ gettouchScreen()
+comment4.params=newtouchScreen
+comment4.target=void\ settouchScreen(boolean)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
