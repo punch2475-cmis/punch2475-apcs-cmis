@@ -1,33 +1,12 @@
 
-/**
- * Write a description of class Plasma here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Plasma extends Television
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Plasma
-     */
-    public Plasma()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        public Plasma(String model , double price) 
+    { 
+        super("Plasma" + model, price);
+    } // end zero-arg constructor Television 
+    public String toString(){
+        String output = super.toString();
+        return output;
     }
 }
