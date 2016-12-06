@@ -23,6 +23,6 @@ public class AsteroidMan extends SuperHero
         return "ASTEROIDDDDDDDDDD";
     }
     public String toString(){
-        return String.format("AsteroidMan \t %s  \t   %s \t %s ", color, cape, motto());
+        return String.format("AsteroidMan \t %s  \t %s \t %s ", color, cape, motto());
     }
 }

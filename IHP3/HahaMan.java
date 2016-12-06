@@ -18,7 +18,7 @@ public class HahaMan extends SuperHero
             super.setSuitColor(color);
         }
     }
-
+    
     public String motto(){
         return "LAUGH";
     }
