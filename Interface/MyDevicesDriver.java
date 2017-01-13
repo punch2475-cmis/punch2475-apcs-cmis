@@ -15,7 +15,13 @@ public class MyDevicesDriver
          {
          device.connectToBluetooth();              
          } // end for each
-         
+      ArrayList <Discountable> discount = new ArrayList<Discountable>();
+      discount.add(pod);
+      discount.add(car);
+      for( Discountable device : discount ){
+          device.applyDiscount();
+          
+        }
       } // end method main
    } // end class MyDevicesDriver
    

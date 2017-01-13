@@ -8,7 +8,7 @@ public class MyCar implements Connectable , Discountable
 
     public void connectToBluetooth()
     {
-        System.out.println("Connecting to bluetooth for MyCar");
+        System.out.println("Connecting to bluetooth for a MyCar");
     }
 
     public void applyDiscount()
