@@ -10,9 +10,12 @@ public class AnalogDigitalDriver
         for(TV e : tv){
             System.out.println(e.tvType() + " ...Am I on? " + e.getTVOn());
         }
+        System.out.println("\n");
         for(TV x : tv){
-            System.out.println(x.tvType() + " ...Am I on? " + x.setTVOn(true));
+            x.setTVOn(true);
+            System.out.println(x.tvType() + " ...Am I on? " + x.getTVOn());
         }
-        
+        System.out.println(bwtv.rotateRabbitEars());
+        System.out.println(hdtv.connectHDMI());
     }
 }
