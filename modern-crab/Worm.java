@@ -15,6 +15,7 @@ public class Worm extends Actor
     public void act() 
     {
         // Add your action code here.
+        move(5);
     }    
     public void eat(){
         Actor crab;
