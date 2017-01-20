@@ -15,12 +15,27 @@ public class E1 extends Actor
     public void act() 
     {
         // Add your action code here.
-                move(1);
-        if(Greenfoot.isKeyDown("Left")){
-            turn(1);
+        move();
+    }  
+
+    public void move(){
+        int r = Greenfoot.getRandomNumber(4);
+        if(r == 0){
+            setLocation(getX(),getY() -10 );
+            move(1);
         }
-        if(Greenfoot.isKeyDown("Right")){
-            turn(1);
+        else if (r == 1){
+            setLocation(getX()-10,getY());
+            move(1);
         }
-    }    
+        else if (r == 2){
+            setLocation(getX(),getY() +10 );
+            move(1);        
+        }
+        else{
+            setLocation(getX()+10,getY());
+            move(1);
+        }
+    }
 }
+

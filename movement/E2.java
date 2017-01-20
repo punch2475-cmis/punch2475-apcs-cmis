@@ -15,6 +15,14 @@ public class E2 extends Actor
     public void act() 
     {
         // Add your action code here.
+        move(5);
         
-    }    
-}
+        if(Greenfoot.getRandomNumber(2) == 0){
+
+            turn(5);
+        }   
+        else{
+            turn(-5);
+        }
+    }
+    }

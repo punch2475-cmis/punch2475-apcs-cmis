@@ -1,16 +1,17 @@
 #Greenfoot project file
+class.E1.image=balloon1.png
 class.E1.superclass=greenfoot.Actor
 class.E2.image=bomb.png
 class.E2.superclass=greenfoot.Actor
 class.MyWorld.superclass=greenfoot.World
-class.TypeA.image=stawberry.png
+class.TypeA.image=apple1.png
 class.TypeA.superclass=greenfoot.Actor
 editor.fx.0.height=727
 editor.fx.0.width=933
 editor.fx.0.x=56
 editor.fx.0.y=53
 editor.swing.0.height=816
-editor.swing.0.width=751
+editor.swing.0.width=750
 editor.swing.0.x=849
 editor.swing.0.y=53
 mainWindow.height=727

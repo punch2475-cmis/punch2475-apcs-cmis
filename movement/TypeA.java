@@ -17,21 +17,27 @@ public class TypeA extends Actor
     {
         // Add your action code here.
         move();
-        turn();
+        up();
+        down();
     }
 
     public void move(){
-        if(Greenfoot.isKeyDown("a")){
+        if(Greenfoot.isKeyDown("Right")){
             move(1);
         }
-        if(Greenfoot.isKeyDown("b")){
+        if(Greenfoot.isKeyDown("Left")){
             move(-1);
         }
     }
 
-    public void turn(){
-        if(Greenfoot.isKeyDown("l")){
-            ;
+    public void up(){
+        if(Greenfoot.isKeyDown("Up")){
+            setLocation(getX(),getY() -1 );
+        }
+    }
+    public void down(){
+        if(Greenfoot.isKeyDown("Down")){
+            setLocation(getX(),getY()+1);
         }
     }
 }
