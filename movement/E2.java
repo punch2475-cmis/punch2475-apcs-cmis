@@ -18,11 +18,15 @@ public class E2 extends Actor
         move(5);
         
         if(Greenfoot.getRandomNumber(2) == 0){
-
             turn(5);
-        }   
+        }  
+        else if (isAtEdge() == true){
+            setLocation(getX()+1,getY()-2);
+         }
         else{
             turn(-5);
         }
+        
+        
     }
     }
