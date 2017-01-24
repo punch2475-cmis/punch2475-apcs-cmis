@@ -28,6 +28,7 @@ public class TypeB extends Actor
             move(5);
         }
     }
+    
 
     /*public void up(){
         if(Greenfoot.isKeyDown("Up")){

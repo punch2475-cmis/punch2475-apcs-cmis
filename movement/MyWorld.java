@@ -22,11 +22,11 @@ public class MyWorld extends World
 
     private void prepare()
     {
-        TypeB typeb = new TypeB();
+        TypeB typeb = new TypeB(e2);
         addObject(typeb,350,248);
         TypeA typea = new TypeA();
         addObject(typea,415,260);
-        E2 e2 = new E2();
+        E2 e2 = new E2( );
         addObject(e2,567,345);
         E1 e1 = new E1();
         addObject(e1,456,123);
