@@ -21,11 +21,11 @@ public class TypeB extends Actor
     public void move(){
         if(Greenfoot.isKeyDown("Right")){
             turn(-3);
-            move(5);
+            move(1);
         }
         if(Greenfoot.isKeyDown("Left")){
             turn(-9);
-            move(5);
+            move(15);
         }
     }
     

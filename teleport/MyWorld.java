@@ -20,15 +20,12 @@ public class MyWorld extends World
         prepare();
     }
 
+
     private void prepare()
     {
-        TypeB typeb = new TypeB();
-        addObject(typeb,350,248);
-        TypeA typea = new TypeA();
-        addObject(typea,415,260);
-        E2 e2 = new E2( typeb );
-        addObject(e2,567,345);
-        E1 e1 = new E1(typea);
-        addObject(e1,456,123);
+        muffin m = new muffin();
+        addObject(m,246,158);
+        ant a = new ant(m);
+        addObject(a,65,330);
     }
 }

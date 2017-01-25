@@ -1,9 +1,12 @@
 #BlueJ class context
 comment0.target=E1
 comment0.text=\n\ Write\ a\ description\ of\ class\ E1\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ E1\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=Target
+comment1.target=E1(greenfoot.Actor)
 comment2.params=
-comment2.target=void\ move()
-numComments=3
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ move()
+comment4.params=
+comment4.target=void\ follow()
+numComments=5
