@@ -30,12 +30,24 @@ public class muffin extends Actor
             move(5);
         }
         if( isAtEdge() == true){
-            setLocation(600,0);
-            turn(5);
-            move(5);
+            if( getX() < 10){
+                setLocation(600 ,getY());
+            }
+            else if(getY() < 10){
+                setLocation(getX() , 400);
+            }
+            //setLocation(600,100);
+            else if (getX() > 590){
+                setLocation(10, getY());
+            }
+            else {
+                setLocation(getX(), 10);
+            }
+            //turn(5);
+            //move(5);
         }
         /*if(getX() == 0){
-            setLocation(600,getY());
+        setLocation(600,getY());
         }*/
     }
 }
