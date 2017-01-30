@@ -19,23 +19,26 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
-    
+
     private void prepare()
     {
         Leader leader = new Leader();
-        addObject(leader,211,251);
-        Leader leader1 = new Leader();
-        addObject(leader1,211,281);
-        Leader leader2 = new Leader();
-        addObject(leader2,211,311);
-        Leader leader3 = new Leader();
-        addObject(leader3,211,341);
-        Leader leader4 = new Leader();
-        addObject(leader4,211,371);
-        //Leader leader5 = new Leader();
-        //addObject(leader5,211,401);
-        //Leader leader6 = new Leader();
-        //addObject(leader6,211,431);
-        
+        addObject(leader,224,201);
+        Leader leader2 = new Leader(leader);
+        addObject(leader2,231,241);
+        Leader leader3 = new Leader(leader2);
+        addObject(leader3,241,241);
+        Leader leader4 = new Leader(leader3);
+        addObject(leader4,251,261);
+        Leader leader5 = new Leader(leader4);
+        addObject(leader5,251,271);
+        Leader leader6 = new Leader(leader5);
+        addObject(leader6,261,291);
+        Leader leader7 = new Leader(leader6);
+        addObject(leader7,271,301);
+        Leader leader8 = new Leader(leader7);
+        addObject(leader7,271,301);
+        addObject(leader7,271,301);addObject(leader7,271,301);addObject(leader7,271,301);addObject(leader7,271,301);
+        addObject(leader7,271,301);addObject(leader7,271,301);
     }
 }
