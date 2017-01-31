@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.Leader.image=button-green.png
+class.Leader.image=ball.png
 class.Leader.superclass=greenfoot.Actor
 class.MyWorld.superclass=greenfoot.World
 dependency1.from=MyWorld
@@ -10,13 +10,13 @@ editor.fx.0.width=700
 editor.fx.0.x=0
 editor.fx.0.y=0
 editor.swing.0.height=726
-editor.swing.0.width=701
+editor.swing.0.width=700
 editor.swing.0.x=899
 editor.swing.0.y=78
 mainWindow.height=600
-mainWindow.width=850
-mainWindow.x=96
-mainWindow.y=267
+mainWindow.width=845
+mainWindow.x=7
+mainWindow.y=36
 package.numDependencies=1
 package.numTargets=2
 project.charset=UTF-8
