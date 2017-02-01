@@ -40,6 +40,6 @@ public class MyWorld extends World
         /*addObject(leader7,271,301);
         addObject(leader7,271,301);addObject(leader7,271,301);addObject(leader7,271,301);addObject(leader7,271,301);
         addObject(leader7,271,301);addObject(leader7,271,301);*/
-      
+
     }
 }
