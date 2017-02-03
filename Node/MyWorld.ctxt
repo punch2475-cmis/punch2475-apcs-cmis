@@ -2,6 +2,7 @@
 comment0.target=MyWorld
 comment1.params=
 comment1.target=MyWorld()
+comment1.text=Actor[]\ Arr;\nArr\ \=\ new\ int\ [node];
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
@@ -10,4 +11,6 @@ comment4.params=
 comment4.target=void\ addNode()
 comment5.params=
 comment5.target=void\ removeNode()
-numComments=6
+comment6.params=
+comment6.target=void\ nextNode()
+numComments=7

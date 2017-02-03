@@ -4,7 +4,8 @@ import java.util.ArrayList;
 public class MyWorld extends World
 {
     private Node node, first,next, last;
-    //ArrayList<nodes> = node
+    /*Actor[] Arr;
+     Arr = new int [node]; */
     public MyWorld()
     {
         super(600, 400, 1); 
@@ -20,7 +21,7 @@ public class MyWorld extends World
             addObject(node, 300, 200);
             last = node;           
         }
-
+        
     }
 
     public void act(){
@@ -34,11 +35,7 @@ public class MyWorld extends World
                 removeNode();
             }
         }
-        if(key != null){
-            if(key.equals("l")){
-                removeObject(first);
-            }
-        }
+        nextNode();
     }
 
     public int[] getNewLocation(){
@@ -60,13 +57,22 @@ public class MyWorld extends World
         last = node;
         addObject(node, loc[0], loc[1]);
     }
-
+    
     public void removeNode(){
         if ( last != null ){
             removeObject(last);
             last = last.getTarget();
+            //next = next.getTarget();
             first = last == null ? null : first;
         }
     }
+    public void nextNode(){
+        for(int k = 0; k < 10; k++){
+            if( k == 2 && Greenfoot.isKeyDown("l")){
 
+                removeObject(first);
+                next = first;
+            }
+        }
+    }
 }
