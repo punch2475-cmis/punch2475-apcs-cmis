@@ -4,24 +4,24 @@ import java.util.ArrayList;
 public class MyWorld extends World
 {
     private Node node, first,next, last;
-    /*Actor[] Arr;
-     Arr = new int [node]; */
+    ArrayList<Node> nodes = new ArrayList<Node>();
     public MyWorld()
     {
         super(600, 400, 1); 
 
         node = new Node(null);
+        //;
         first = node;
-        //next become first when first get remove
-        //use arraylist to find the second one
+
         addObject(node, 300, 200);
         System.out.println("here");
         for (int j = 1; j < 10; j++){
             node = new Node(node);
+            nodes.add(node);
             addObject(node, 300, 200);
             last = node;           
         }
-        
+
     }
 
     public void act(){
@@ -34,8 +34,14 @@ public class MyWorld extends World
             if ( key.equals("r")){
                 removeNode();
             }
+            if( Greenfoot.isKeyDown("l")){
+                for(int k = 0; k < nodes.size(); k++){
+                    first = nodes.get(0);
+                    removeObject(nodes.get(0));
+                    first = nodes.get(1);
+                }
+            }
         }
-        nextNode();
     }
 
     public int[] getNewLocation(){
@@ -57,7 +63,7 @@ public class MyWorld extends World
         last = node;
         addObject(node, loc[0], loc[1]);
     }
-    
+
     public void removeNode(){
         if ( last != null ){
             removeObject(last);
@@ -66,13 +72,5 @@ public class MyWorld extends World
             first = last == null ? null : first;
         }
     }
-    public void nextNode(){
-        for(int k = 0; k < 10; k++){
-            if( k == 2 && Greenfoot.isKeyDown("l")){
 
-                removeObject(first);
-                next = first;
-            }
-        }
-    }
 }
