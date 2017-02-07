@@ -1,9 +1,9 @@
-import greenfoot.*;  
+ import greenfoot.*;  
 import java.util.ArrayList;
 
 public class MyWorld extends World
 {
-    private Node node, first,next, last;
+    private Node node, first, OldFirst ,next, last;
     ArrayList<Node> nodes = new ArrayList<Node>();
     public MyWorld()
     {
@@ -18,6 +18,7 @@ public class MyWorld extends World
         for (int j = 1; j < 10; j++){
             node = new Node(node);
             nodes.add(node);
+            first = nodes.get(0);
             addObject(node, 300, 200);
             last = node;           
         }
@@ -35,11 +36,7 @@ public class MyWorld extends World
                 removeNode();
             }
             if( Greenfoot.isKeyDown("l")){
-                for(int k = 0; k < nodes.size(); k++){
-                    first = nodes.get(0);
-                    removeObject(nodes.get(0));
-                    first = nodes.get(1);
-                }
+                NextLeader();
             }
         }
     }
@@ -61,6 +58,7 @@ public class MyWorld extends World
         }
         int[] loc = getNewLocation();
         last = node;
+        nodes.add(node);
         addObject(node, loc[0], loc[1]);
     }
 
@@ -73,4 +71,12 @@ public class MyWorld extends World
         }
     }
 
+    public void NextLeader(){
+        while(nodes.size() > 1){
+            removeObject(first);
+            nodes.remove(nodes.get(0));
+            first = nodes.get(0);
+            first.setTarget(null);
+        }
+    }
 }
