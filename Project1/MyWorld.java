@@ -18,4 +18,8 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
     }
+    //there is going to be a math number show up with asteroid or bomb
+    //if u get asteroid is 10 pts
+    //if u get bomb -5 pts
+    //
 }
