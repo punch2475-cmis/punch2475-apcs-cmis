@@ -19,7 +19,7 @@ public class Counter  extends Actor
     /**
      * Increase the total amount displayed on the counter, by a given amount.
      */
-    public void Count(int amount)
+    public void hitCount(int amount)
     {
         totalCount += amount;
         setImage(new GreenfootImage("" + totalCount, 20, Color.WHITE, Color.BLUE));
