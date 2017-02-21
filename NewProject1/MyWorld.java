@@ -18,17 +18,21 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         //addObject(new Vector(),300,330);
+        addObject(new base(),300,330);
         theCounter = new Counter();
-        addObject(new Counter(),100,350);
-        addObject(new arrow(),300,330);
+        addObject( theCounter,100,350);
+        
         
     }
     public Counter getCounter(){
         return theCounter;
     }
     public void act(){
-        if(Greenfoot.getRandomNumber(1000 ) < 2){
-            addObject(new balloon(),0, 20 );
+        if(Greenfoot.getRandomNumber(1000 ) < 5){
+            addObject(new balloon(),Greenfoot.getRandomNumber(400), 20 );
+        }
+        if(Greenfoot.getRandomNumber(1000) < 1){
+            addObject(new bomb(),Greenfoot.getRandomNumber(400), 20 );
         }
     }
     

@@ -13,15 +13,13 @@ public class Counter  extends Actor
 
     public Counter()
     {
-        setImage(new GreenfootImage("0", 20, Color.WHITE, Color.BLUE));
+        setImage(new GreenfootImage("0", 20, Color.WHITE, Color.BLACK));
     }
 
-    /**
-     * Increase the total amount displayed on the counter, by a given amount.
-     */
+    
     public void hitCount(int amount)
     {
         totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 20, Color.WHITE, Color.BLUE));
+        setImage(new GreenfootImage("" + totalCount, 20, Color.WHITE, Color.BLACK));
     }
 }

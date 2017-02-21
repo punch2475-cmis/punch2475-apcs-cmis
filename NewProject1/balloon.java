@@ -15,9 +15,9 @@ public class balloon extends Actor
     public void act() 
     {
         // Add your action code here.
-        int positionX =getX() +1;
+        int positionX =getX();
         int positionY= getY()+1;
-       if(positionX >= getWorld().getWidth() || positionY >= getWorld().getWidth()){
+       if(isAtEdge() == true){
             getWorld().removeObject(this);
         }
         else{
@@ -30,5 +30,6 @@ public class balloon extends Actor
                 setLocation(positionX, positionY);
             }
         }*/
+        //positionX >= getWorld().getWidth() || positionY >= getWorld().getWidth()
     }    
 }
