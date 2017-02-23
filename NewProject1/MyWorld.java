@@ -30,9 +30,13 @@ public class MyWorld extends World
     public void act(){
         if(Greenfoot.getRandomNumber(1000 ) < 5){
             addObject(new balloon(),Greenfoot.getRandomNumber(400), 20 );
+            
         }
-        if(Greenfoot.getRandomNumber(1000) < 1){
-            addObject(new bomb(),Greenfoot.getRandomNumber(400), 20 );
+        if(Greenfoot.getRandomNumber(1000) < 2){
+            addObject(new bomb(),Greenfoot.getRandomNumber(400), 15 );
+        }
+        if(Greenfoot.getRandomNumber(1000) < 2){
+                addObject(new Superbomb(),  Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(30));
         }
     }
     
