@@ -9,8 +9,12 @@ public class recursionPA
         if(y ==0){
             return 1;
         }
+        else if(y == 1){
+            return x;
+        }
         else{
-            return powA(x, y-1)*x;
+
+            return x+=x;
         }
     }
     
