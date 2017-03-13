@@ -1,66 +1,30 @@
 public class recursionNums
 {
-    public static void main (String [] args){
-        int [] nums = {0,1,5,4,3,6,7,2,6,9,8,5,4};
-
-        int [] sortNums = new int[nums.length-1];
+    public static void main (String [] args)
+    {
+        int [] nums = {0,1,5,4,3,6,7,2,6,9,8,5,4,454,5,45,4,4,8,125479,455,45,};
         sort(nums);
-            
+        for (int i =0; i < nums.length; i++){
+            System.out.print(nums[i]+ " ");
+        }
     }
-    /*public static int[] sort(int [] nums){
-        int [] sortNums = new int[nums.length -1];
-        int max =0;
-        int oldMax =0;
-        int min = 0;
-        for( int i = 0; i < nums.length; i++){
-            if( i == 0 && nums[i] > nums[i++])
-            {
-                min = nums[i++] = sortNums[0];
-                max =nums[i] = sortNums[nums.length-1];
+    public static int[] sort(int [] nums)
+    {
+        boolean order = true;
+        int min =0;
+        while(order){
+            for(int i=0; i < nums.length; i++){  
+                for(int j=1; j < (nums.length-i); j++){  
+                    if(nums[j-1] > nums[j]){  
+                        //swap numbers  
+                        min = nums[j-1];  
+                        nums[j-1] = nums[j];  
+                        nums[j] = min;  
+                    }  
+                } 
             }
-            else if ( nums[i++] > nums[i]){
-                max = nums[i++] = sortNums[nums.length -1];
-                min= nums[i] = sortNums[0];
-            }
-            else if (i!= 0 && max > nums[i]){
-                max = sortNums[nums.length -1];
-            }
-            else if( i !=0 && nums[i] > max){
-                oldMax= max = sortNums[nums.length -i];
-                max = nums[i] = sortNums[nums.length -1];
-            }
-            else if( i != 0 && nums[i] > min){
-                min = sortNums[0];
-            }
-            else if (i != 0 && min > nums[i]){
-                min = sortNums[1];
-                nums[i] = min = sortNums[0];
-            }
+            order = false;
         }
-        return sort(sortNums);
-    }*/
-    
-    public static int[] sort(int [] nums){
-        int [] sortNums = new int[nums.length-1];
-        boolean swap;
-        int newNums;
-        for(int i =0; i < nums.length; i++){
-            if(nums[i] > nums[i++]){
-                nums[i] = nums[i++];
-                nums[i++] = nums[i];
-                swap = true;
-            }
-            else if ( nums[i++] > nums[i]){
-                nums[i] = nums[i++];
-                nums[i++] = nums[i];
-                swap = true;
-            }
-            else if (nums[i] < nums[i++]){
-                swap = false;
-                
-            }
-        }
-        
-        return sort(sortNums);
+        return nums;
     }
 }
