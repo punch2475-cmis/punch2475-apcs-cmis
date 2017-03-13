@@ -35,9 +35,7 @@ public class MyWorld extends World
         if(Greenfoot.getRandomNumber(1000) < 2){
             addObject(new bomb(),Greenfoot.getRandomNumber(400), 15 );
         }
-        if(Greenfoot.getRandomNumber(1000) < 2){
-                addObject(new Superbomb(),  Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(30));
-        }
+        
     }
     
 }

@@ -47,17 +47,7 @@ public class base extends Actor
                 }
                 getWorld().removeObject(bb);
             }
-            if(Superbb != null){
-                hitSuperbomb();
-                superBombHitCount++;
-                if(superBombHitCount ==2){
-                    Greenfoot.stop();
-                    int a = Greenfoot.getRandomNumber(100);
-                    int b = Greenfoot.getRandomNumber(100);
-                    int c = a +b;
-                    String input1 = JOptionPane.showInputDialog( a  + "+" + b );
-                }
-            }
+    
         }
         else{
             getWorld().removeObject(this);
@@ -78,12 +68,12 @@ public class base extends Actor
         counter.hitCount(-5);
 
     }
-    public void hitSuperbomb(){
+    /*public void hitSuperbomb(){
         MyWorld sky = (MyWorld) getWorld();
         Counter counter = sky.getCounter();
         counter.hitCount(-50);
 
-    }
+    }*/
     public void move(){
         if(Greenfoot.isKeyDown("Right")){
             move(2);
@@ -97,4 +87,20 @@ public class base extends Actor
     getWorld().addObject(new arrow(),getX(), getY());
     }
     }*/
-}
+    /*     if(Superbb != null){
+                hitSuperbomb();
+                superBombHitCount++;
+                if(superBombHitCount ==2){
+                    /*Greenfoot.stop();
+                    int a = Greenfoot.getRandomNumber(100);
+                    int b = Greenfoot.getRandomNumber(100);
+                    int c = a +b;
+                    int input1 = Integer.parseInt(JOptionPane.showInputDialog( a  + "+" + b ));
+                    if( input1 == c){
+                        superBombHitCount = 0;
+                    }*/
+                    
+                        //System.out.println("GAME OVER");
+                   
+                
+            }
