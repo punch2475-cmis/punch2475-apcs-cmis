@@ -11,15 +11,15 @@ public class recursionNums
     public static int[] sort(int [] nums)
     {
         boolean order = true;
-        int min =0;
+        int SortNum =0;
         while(order){
             for(int i=0; i < nums.length; i++){  
                 for(int j=1; j < (nums.length-i); j++){  
                     if(nums[j-1] > nums[j]){  
                         //swap numbers  
-                        min = nums[j-1];  
+                        SortNum = nums[j-1];  
                         nums[j-1] = nums[j];  
-                        nums[j] = min;  
+                        nums[j] = SortNum;  
                     }  
                 } 
             }
