@@ -1,6 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
-import javax.swing.JOptionPane;
+import java.util.*;
+
 public class base extends Actor
 {
     /*public arrow( Vector vector){
@@ -43,7 +44,8 @@ public class base extends Actor
                 bombHitCount++;
                 if(bombHitCount == 5){
                     Greenfoot.stop();
-                    System.out.println("Game Over \n Please restart the game");
+                    //showText("Game Over!!", 300, 200);
+                    System.out.println("GAME OVER");
                 }
                 getWorld().removeObject(bb);
             }
