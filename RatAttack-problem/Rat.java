@@ -65,12 +65,18 @@ public class Rat extends Actor
     
     public Cheese getTargetCheese(int range){// find cheese to eat
         Cheese target = null;// no target
+       
         List<Cheese> cheeses = getObjectsInRange(range, Cheese.class);// if cheese within 200 range add to the arraylist
         if (cheeses.size() == 0){
             target = null;
             // no cheese = no target = null
         }else if( cheeses.size() >= 1 ){
-            target = cheeses.get(0);
+            if(target != null){
+                
+            }
+            
+            
+            //target = cheeses.get(0);
             // there is cheese go eat the first one that in the array
         } 
         return target; 
@@ -83,9 +89,14 @@ public class Rat extends Actor
             w.removeObject(cheese);
             eaten++; // if the rats eat cheese, remove cheese and #of eaten go up
         }
+        if (eaten == 3){
+            World w = getWorld();
+            w.addObject(new Rat() ,getX() , getY());
+            eaten = 0;
+        }
     }
     
-    
+
     public void die(){
         if(isTouching(Trap.class)){
             MyWorld w = (MyWorld)getWorld();

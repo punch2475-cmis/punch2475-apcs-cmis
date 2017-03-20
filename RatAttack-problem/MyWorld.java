@@ -23,7 +23,9 @@ public class MyWorld extends World
         addObject(new Exterminator(), 520, 200);// 1 exterminator in the world
         addObject(new Trap(), 550, 200);// 1 trap in the world
         startTime = System.currentTimeMillis();// timer 
-        
+        if(startTime -15 == runningTime){
+            addObject(new Rat(), 50, Greenfoot.getRandomNumber(400));
+        }
     }
     
     public void act(){
