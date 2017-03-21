@@ -4,6 +4,7 @@ public class Rat extends Actor
 {
     private int direction;
     private int eaten;
+    private int TrapRat =0;
     public Rat(){
         direction = Greenfoot.getRandomNumber(4);// randomly move
         getImage().scale(50,25);// image scale
@@ -71,10 +72,13 @@ public class Rat extends Actor
             target = null;
             // no cheese = no target = null
         }else if( cheeses.size() >= 1 ){
-            if(target != null){
-                
-            }
             
+             if(cheeses.size() > 1){
+                target =  getTargetCheese(200);
+            }
+            else if( cheeses.size() == 1 ){
+                target =cheeses.get(0);
+            }
             
             //target = cheeses.get(0);
             // there is cheese go eat the first one that in the array
@@ -93,15 +97,27 @@ public class Rat extends Actor
             World w = getWorld();
             w.addObject(new Rat() ,getX() , getY());
             eaten = 0;
-        }
+        }//number2
     }
     
 
     public void die(){
         if(isTouching(Trap.class)){
+            
             MyWorld w = (MyWorld)getWorld();
             w.removeObject(this);
+            TrapRat++;
             w.score(); // if the rats didn't eat but go to the trap = die
+            
+            //System.out.println(TrapRat);
         }
+       if(TrapRat == 3){
+            World w = getWorld();
+            Actor ET = (Actor)getWorld().getObjects(Exterminator.class);
+            int ETX = ET.getX();
+            int ETY = ET.getY();
+            w.addObject(new ExtraGuy() , ETX,ETY);
+            TrapRat =0;
+        }//number6
     }
 }

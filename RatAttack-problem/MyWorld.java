@@ -10,6 +10,8 @@ public class MyWorld extends World
     {
         super(600, 400, 1); 
         init(level);
+        addCheeseBomb();
+        addRat();
     }
 
     public void init(int level){
@@ -23,9 +25,7 @@ public class MyWorld extends World
         addObject(new Exterminator(), 520, 200);// 1 exterminator in the world
         addObject(new Trap(), 550, 200);// 1 trap in the world
         startTime = System.currentTimeMillis();// timer 
-        if(startTime -15 == runningTime){
-            addObject(new Rat(), 50, Greenfoot.getRandomNumber(400));
-        }
+       
     }
     
     public void act(){
@@ -35,15 +35,43 @@ public class MyWorld extends World
             init(level++);// when rats == 0 the level will go up by 1 (if in level 2 if i rats die level will go to level 3)
         }
         showText(score+"  "+(int)(15 -(runningTime/1000.0)), 50, 50);// show score
-
+        
     }
     
+    public void addRat(){
+         if(startTime -15 == runningTime){
+            addObject(new Rat(), 50, Greenfoot.getRandomNumber(400));
+        }//number 1
+    }
 
     public void addCheese(int x, int y){
         addObject(new Cheese(), x, y);// add cheese 
     }
 
+    public void addCheeseBomb(){
+        int timer = 1000;
+        if(timer > 0){
+            timer--;
+            int randomCheese = Greenfoot.getRandomNumber(4);
+            if(randomCheese == 1){
+                addObject(new CheeseBomb(),0 + Greenfoot.getRandomNumber(200), 0 - Greenfoot.getRandomNumber(100));
+                
+            }
+            else if(randomCheese == 2){
+                addObject(new CheeseBomb(),600 - Greenfoot.getRandomNumber(200), 0 -Greenfoot.getRandomNumber(100));
+                
+            }
+            else if(randomCheese == 3){
+                addObject(new CheeseBomb(),0 + Greenfoot.getRandomNumber(200), 400 - Greenfoot.getRandomNumber(100));
+               
+            }
+            else if(randomCheese == 4){
+                addObject(new CheeseBomb(),600 - Greenfoot.getRandomNumber(200), 400 - Greenfoot.getRandomNumber(100));
+                
+            }
 
+        }//number3
+    }
 
     public void score(){
         score++;// score goes up 

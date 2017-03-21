@@ -5,6 +5,7 @@ public class Exterminator extends Actor
     private int cheeseCount;
     private int delay;
     private boolean haveTrap;
+    
     public Exterminator(){
         haveTrap = true; // check if there is trap
         cheeseCount = 5; // you can use up to 5 cheese
