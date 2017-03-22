@@ -4,6 +4,7 @@ public class MyWorld extends World
 {
     private long startTime;
     private long runningTime;
+    private long ConTime;
     private int level = 1;
     private int score = 0;
     public MyWorld()
@@ -30,7 +31,7 @@ public class MyWorld extends World
     
     public void act(){
         runningTime = System.currentTimeMillis() - startTime;// count down time
-
+        ConTime = System.currentTimeMillis() - startTime;
         if(getObjects(Rat.class).size() == 0){
             init(level++);// when rats == 0 the level will go up by 1 (if in level 2 if i rats die level will go to level 3)
         }
@@ -39,7 +40,7 @@ public class MyWorld extends World
     }
     
     public void addRat(){
-         if(startTime -15 == runningTime){
+         if(ConTime -15 == runningTime){
             addObject(new Rat(), 50, Greenfoot.getRandomNumber(400));
         }//number 1
     }

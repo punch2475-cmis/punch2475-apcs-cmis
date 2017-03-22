@@ -73,7 +73,7 @@ public class Rat extends Actor
             // no cheese = no target = null
         }else if( cheeses.size() >= 1 ){
             
-             if(cheeses.size() > 1){
+           if(cheeses.size() > 1){
                 target =  getTargetCheese(200);
             }
             else if( cheeses.size() == 1 ){
@@ -82,7 +82,7 @@ public class Rat extends Actor
             
             //target = cheeses.get(0);
             // there is cheese go eat the first one that in the array
-        } 
+        } //number 5
         return target; 
     }
     
@@ -106,18 +106,18 @@ public class Rat extends Actor
             
             MyWorld w = (MyWorld)getWorld();
             w.removeObject(this);
-            TrapRat++;
+            //TrapRat();
             w.score(); // if the rats didn't eat but go to the trap = die
             
             //System.out.println(TrapRat);
         }
-       if(TrapRat == 3){
+       /*if(TrapRat == 3){
             World w = getWorld();
             Actor ET = (Actor)getWorld().getObjects(Exterminator.class);
             int ETX = ET.getX();
             int ETY = ET.getY();
             w.addObject(new ExtraGuy() , ETX,ETY);
             TrapRat =0;
-        }//number6
+        }//number6*/
     }
 }

@@ -14,6 +14,7 @@ public class Cheese extends Actor
 
     public void act(){
        freshness--;
+       System.out.println(freshness);
         if( freshness < 500 )
         {
             img.setColor(Color.green);
