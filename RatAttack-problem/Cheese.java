@@ -38,7 +38,7 @@ public class Cheese extends Actor
             MyWorld w = (MyWorld)getWorld();
             w.removeObject(this);
         }
-    }//number4
+    }//number4 it works 3pts 
 
     public boolean isRotten(){
         return freshness < 0;

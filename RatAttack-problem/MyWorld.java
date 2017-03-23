@@ -42,7 +42,7 @@ public class MyWorld extends World
     public void addRat(){
          if(ConTime -15 == runningTime){
             addObject(new Rat(), 50, Greenfoot.getRandomNumber(400));
-        }//number 1
+        }//number 1 0.1 it doesn't work 
     }
 
     public void addCheese(int x, int y){
@@ -71,7 +71,7 @@ public class MyWorld extends World
                 
             }
 
-        }//number3
+        }//number3 it appear and gone but it doesn't add a new one 0.5pt
     }
 
     public void score(){

@@ -66,7 +66,7 @@ public class Rat extends Actor
     
     public Cheese getTargetCheese(int range){// find cheese to eat
         Cheese target = null;// no target
-       
+        int Range = 200;
         List<Cheese> cheeses = getObjectsInRange(range, Cheese.class);// if cheese within 200 range add to the arraylist
         if (cheeses.size() == 0){
             target = null;
@@ -74,7 +74,7 @@ public class Rat extends Actor
         }else if( cheeses.size() >= 1 ){
             
            if(cheeses.size() > 1){
-                target =  getTargetCheese(200);
+               target =  getTargetCheese(200);
             }
             else if( cheeses.size() == 1 ){
                 target =cheeses.get(0);
@@ -82,7 +82,7 @@ public class Rat extends Actor
             
             //target = cheeses.get(0);
             // there is cheese go eat the first one that in the array
-        } //number 5
+        } //number 5 it works sometime 2 pts
         return target; 
     }
     
@@ -97,7 +97,7 @@ public class Rat extends Actor
             World w = getWorld();
             w.addObject(new Rat() ,getX() , getY());
             eaten = 0;
-        }//number2
+        }//number2 it works 2pts
     }
     
 
@@ -106,7 +106,7 @@ public class Rat extends Actor
             
             MyWorld w = (MyWorld)getWorld();
             w.removeObject(this);
-            //TrapRat();
+            //TrapRat++;
             w.score(); // if the rats didn't eat but go to the trap = die
             
             //System.out.println(TrapRat);
@@ -118,6 +118,6 @@ public class Rat extends Actor
             int ETY = ET.getY();
             w.addObject(new ExtraGuy() , ETX,ETY);
             TrapRat =0;
-        }//number6*/
+        }//number6*/ // it doesn't work 2pts 
     }
 }
