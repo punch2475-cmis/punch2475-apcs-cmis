@@ -1,0 +1,42 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-oracle/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/home/cmis/punch2475-apcs-cmis/recursion
+-d
+/home/cmis/punch2475-apcs-cmis/recursion/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java
+<---- end of javadoc command ---->
+Loading source file /home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java...
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java:14: error: not a statement
+             count2;
+             ^
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java:17: error: illegal start of expression
+    }
+    ^
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java:17: error: ';' expected
+    }
+     ^
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java:35: error: reached end of file while parsing
+}
+ ^
+/home/cmis/punch2475-apcs-cmis/recursion/MergeSort.java:36: error: reached end of file while parsing
+5 errors

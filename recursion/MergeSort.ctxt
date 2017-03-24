@@ -1,4 +1,7 @@
 #BlueJ class context
 comment0.params=arg
 comment0.target=void\ main(java.lang.String[])
-numComments=1
+comment1.params=nums
+comment1.target=void\ getLeast(int[])
+comment1.text=public\ static\ int\ [][]\ split\ (int\ []\ nums){\n\ \ \ \ int\ i\ \=0;\n\ \ \ \ int\ Dnums\ \=\ nums.length/2;\n\ \ \ \ int\ []\ RArray;\n\ \ \ \ while(\ i\ <\=\ nums.length){\n\ \ \ \ RArray\ \=\ Arrays.copyOf(nums,\ nums.length/2);\ \n\ \ \ \ }\n\n\ \ \ \ }\n\ \ \ \ public\ static\ int[]\ sort(int\ []\ nums){\n\n\ \ \ \ }\n\ \ \ \ public\ static\ int\ []\ merge(int\ []\ nums){\n\n}
+numComments=2
