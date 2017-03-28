@@ -2,22 +2,26 @@ import java.util.Arrays;
 public class MergeSort
 {
     public static void main(String[] arg){
-        int [] nums = new int []{0,1,5,4,3,6,7,2,6,9,8,5,4,454,5,45,4,4,8,125479,455,45,};
-        /*int count =0;
+        int [] nums = new int []{8,6};
+        int count =0;
         int count2= 0;
-        for(int i = 0; i < nums.length;i++){
-        count++;
+        sort(nums);
+        for (int i =0; i < nums.length; i++){
+            System.out.print(nums[i]+ " ");
         }
-
+        for(int i = 0; i < nums.length;i++){
+            count++;
+        }
+        int [] RArray = Arrays.copyOf(nums, nums.length/2); 
         for( int i = 0; i < RArray.length;i++){
-        //System.out.println(RArray[i]);
-        count2++;
+            //System.out.println(RArray[i]);
+            count2++;
         }
         int [] SecArray = Arrays.copyOf(RArray, count2/2);
         for(int i =0; i < SecArray.length; i++){
-        System.out.println(SecArray[i]);
+            System.out.println(SecArray[i]);
+        }
 
-        }*/
     }
 
     /*public static int [][] split (int [] nums){
@@ -36,15 +40,49 @@ public class MergeSort
 
     }*/
 
-    public  void getLeast(int[] nums){
-        while(nums.length > 0){
-            for(int i =0; i < nums.length;i++){
-                if(nums.length > 0){
-                    int [] RArray = Arrays.copyOf(nums, nums.length/2); 
-                    //nums.length = RArray.length;
-                }
-            }
+    /*public  void getLeast(int[] nums){
+    while(nums.length > 0){
+    for(int i =0; i < nums.length;i++){
+    if(nums.length > 0){
+    int [] RArray = Arrays.copyOf(nums, nums.length/2); 
+    System.out.println(RArray[i]);
+    }
+    }
+    System.out.println(nums.length);
+    }
+    }
 
+    if(nums[j-1] > nums[j]){  
+    //swap numbers  
+    SortNum = nums[j-1];  
+    nums[j-1] = nums[j];  
+    nums[j] = SortNum;  
+    }   
+     */
+
+    /*
+     * 
+     */
+    public static int[] sort(int[] nums){
+        int count =2;
+        int SortNum =0;
+        while(count > 0){
+            for(int i =0; i < nums.length/2;i++){
+                if(nums.length > 0){
+
+                }
+                else if(nums.length == 1){
+                    if(nums[i-1] > nums[i]){  
+                        //swap numbers  
+                        SortNum = nums[i-1];  
+                        nums[i-1] = nums[i];  
+                        nums[i] = SortNum;  
+                    } 
+                }
+
+            }
+            count =0;
         }
+        return nums;
     }
 }
