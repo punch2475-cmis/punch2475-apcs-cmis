@@ -3,5 +3,5 @@ comment0.params=arg
 comment0.target=void\ main(java.lang.String[])
 comment1.params=nums
 comment1.target=int[]\ sort(int[])
-comment1.text=\n\ \n
+comment1.text=public\ static\ int\ [][]\ split\ (int\ []\ nums){\n\ \ \ \ int\ i\ \=0;\n\ \ \ \ int\ Dnums\ \=\ nums.length/2;\n\ \ \ \ int\ []\ RArray;\n\n\ \ \ \ }\n\ \ \ \ /*while(\ i\ <\=\ nums.length){\n\ \ \ \ RArray\ \=\ Arrays.copyOf(nums,\ nums.length/2);\ \n\ \ \ \ }\n\n}
 numComments=2
