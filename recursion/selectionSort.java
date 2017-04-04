@@ -6,37 +6,54 @@ public class selectionSort
     }
 
     public static int[] selection(int[] nums){
-        int min = nums[0];
+        //int min = nums[0];
         int stored = 0;
         int limit = 0;
 
+        /*while( min != nums[nums.length-1] )
+        {
         for(int i = 0; i < nums.length; i++){
-            if(nums[i] < min){
-                if( limit < min )
-                {
-                    min = nums[i];
-                }
-            }
-            //System.out.print(nums[i] + " ");
+        if((nums[i] < min) && (nums[i] > limit)){
+        min = nums[i];
+        }
+        //System.out.print(nums[i] + " ");
         }
         System.out.println("Min: " + min);
         //System.out.println("=,=");
-        for(int i = 0; i < nums.length; i++){
-            if( nums[i] == min )
-            {
-                stored = nums[0];
-                //System.out.print("Stored " + stored + " ");
-                nums[0] = nums[i];
-                //System.out.print("nums[0] " + nums[0] + " ");
-                nums[i] = stored;
-                limit = min;
-                nums[0] = min;
-            }
+        for(int i = limit; i < nums.length; i++){
+        if( nums[i] == min )
+        {
+        stored = nums[0];
+        //System.out.print("Stored " + stored + " ");
+        nums[0] = nums[i];
+        //System.out.print("nums[0] " + nums[0] + " ");
+        nums[i] = stored;
+        nums[0] = min;
+        min++;
+        limit++;
+        i = nums.length;
+        }
         }
         for(int i = 0; i < nums.length; i++){
-            System.out.print(nums[i] + " ");
+        System.out.print(nums[i] + " ");
+        }
+        /*int i =0;
+        if( nums[i] < nums[i++]  ){
+        return nums;
+        }
+        else
+        {
         }
         return nums;
-    }
+        int sortedIndex;
+        int min = 1000;
 
+        for( int i = 0; i < nums.length; i++){
+        for(sortedIndex = j; j < nums.length; sortedIndex++){
+        //if( nums < )min 
+        }            
+        }
+         */
+        return nums;
+    }
 }
