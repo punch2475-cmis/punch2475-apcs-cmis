@@ -21,7 +21,9 @@ public class insertionSort
                     nums[j] = nums[j];
                     nums[j-1] = nums[j-1];
                 }
+               System.out.print(nums[j] + " ");
             }
+             System.out.println();
         }
         return nums;
     }
