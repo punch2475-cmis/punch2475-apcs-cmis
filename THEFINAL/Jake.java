@@ -26,6 +26,7 @@ public class Jake extends Actor
         if(Greenfoot.isKeyDown("Down")){
             move(-2);
         } 
+        die();
     }   
 
     public Jake(){
@@ -36,7 +37,7 @@ public class Jake extends Actor
     public void die(){
         if(isTouching(enemy.class)){
             MyWorld w = (MyWorld)getWorld();
-            
+            w.removeObject(this);
         }
     }
 }
