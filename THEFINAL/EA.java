@@ -14,11 +14,10 @@ public class EA extends enemy
      */
     private int randomMove;
     public EA(){
+        GreenfootImage imgEA = getImg();
+        int countDown1 = getCountDown();
     }
-    public EA(int countDown){
-        super();
    
-    }
     public void act() 
     {
         // Add your action code here.

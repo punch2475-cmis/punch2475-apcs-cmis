@@ -18,6 +18,18 @@ public abstract class enemy extends Actor implements move
     public enemy( GreenfootImage img, int countDown){
         countDown = 500 + Greenfoot.getRandomNumber(500);
     }
+    public GreenfootImage getImg(){
+        return img;
+    }
+    public int getCountDown(){
+        return countDown;
+    }
+    public void setImg( GreenfootImage newImg){
+        img = newImg;
+    }
+    public void setCountDown( int newCountDown){
+        countDown = newCountDown;
+    }
 
 
     }

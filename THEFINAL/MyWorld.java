@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 public class MyWorld extends World
 {
+   private int level = 1;
+   
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -21,9 +23,9 @@ public class MyWorld extends World
     }
 
     public void addWall(){
-        addObject(new wall(), Greenfoot.getRandomNumber(300), Greenfoot.getRandomNumber(150));
-        addObject(new wall(), Greenfoot.getRandomNumber(400), Greenfoot.getRandomNumber(250));
-        addObject(new wall(), Greenfoot.getRandomNumber(550), Greenfoot.getRandomNumber(375));
+        addObject(new wall(), Greenfoot.getRandomNumber(300)+150, Greenfoot.getRandomNumber(150));
+        addObject(new wall(), Greenfoot.getRandomNumber(400)+150, Greenfoot.getRandomNumber(250));
+        addObject(new wall(), Greenfoot.getRandomNumber(550)+200, Greenfoot.getRandomNumber(375));
     }
 
     public void addEnemy(){
@@ -34,5 +36,10 @@ public class MyWorld extends World
     public void dd(){
         showText("Game Over!!", 300, 200);
         Greenfoot.stop();
+    }
+    
+    public void ilv(int level){
+        //List< Actor> actors = getObject(null);
+        
     }
 }

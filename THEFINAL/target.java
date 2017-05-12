@@ -8,7 +8,11 @@ public class target extends Actor
     }
     public void act() 
     {
+        Jake jake = (Jake)getOneIntersectingObject(Jake.class);
         
+        if(isTouching(Jake.class)){
+            
+        }
         
     }    
 }
