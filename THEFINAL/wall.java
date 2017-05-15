@@ -17,41 +17,45 @@ public class wall extends Actor
     private int ai;
     public void act()  
     {
-                Jake jake = (Jake)getOneIntersectingObject(Jake.class);
-        
+        Jake jake = (Jake)getOneIntersectingObject(Jake.class);
+
         if(isTouching(Jake.class)){
-             playerpick = Integer.parseInt(JOptionPane.showInputDialog(" random num 1-4"));
-             Question();
+
+            String [] q = new String [] { "4+5" , "log10", "5+6-3+2+6+9+5-15", "5*6*9"};
+            int [] a = new int []  {9 , 1, 15 , 270};
+            int ai = Greenfoot.getRandomNumber(4);
+            for(int i =0; i < q.length; i++){
+                if( ai == i){
+                    String input1 = JOptionPane.showInputDialog(q[i]);
+                    int dec = Integer.parseInt(input1);
+                    int ans = a[i];
+                    if(dec == ans){
+                        System.out.println("1pts");
+                        break;
+                    }
+                }
+                
+            }
         }
     }    
-     private GreenfootImage img;
+    private GreenfootImage img;
     public wall(){
         img = new GreenfootImage(20,200);
         img.setColor(Color.green);
         img.drawRect(0,0,Greenfoot.getRandomNumber(20), Greenfoot.getRandomNumber(200));
-       img.fill();
+        img.fill();
         /*
          *         img = new GreenfootImage(20, 25);
         img.setColor(Color.green);
         img.drawOval(0,0,20,20);
         img.fillOval(0,0,20,20);
-        
+
         setImage(img);
          */
         setImage(img);
     }
+
     public void Question(){
-        String [] q = new String [] { "4+5" , "log10", "5+6-3+2+6+9+5-15", "5*6*9"};
-        String [] a = new String []  {"9" , "1", "15" , "270"};
-        int ai = Greenfoot.getRandomNumber(4);
-        for(int i =0; i < q.length; i++){
-            if( ai == playerpick){
-                  String input1 = JOptionPane.showInputDialog(q[i]);
-                  if(input1 == a[i]){
-                      System.out.println("1pts");
-                    }
-            }
-        }
-        
+
     }
 }
