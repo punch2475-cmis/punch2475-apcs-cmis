@@ -44,6 +44,16 @@ public class EB extends enemy
              setLocation(getX() + X, getY() + Y);
     }
       public void touching(){
-          
+          if(isTouching(Jake.class)){
+              int rn = Greenfoot.getRandomNumber(4);
+              if(rn > 2){
+                  System.out.println("Still Alive");
+                }
+                else {
+                    System.out.println("Died");
+                    
+                }
+              
+            }
         }
 }

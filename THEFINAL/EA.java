@@ -42,7 +42,9 @@ public class EA extends enemy
              setLocation(getX() + X, getY() + Y);
         }
         public void touching(){
-            
+            if(isTouching(Jake.class)){
+                System.out.println("TRY AGAIN");
+            }
         }
     }
 

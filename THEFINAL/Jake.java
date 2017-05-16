@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Jake extends Actor
+public class Jake extends Actor implements move
 {
     /**
      * Act - do whatever the Jake wants to do. This method is called whenever
@@ -14,18 +14,7 @@ public class Jake extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.isKeyDown("Up")){
-            move(2);
-        }
-        if(Greenfoot.isKeyDown("Right")){
-            turn(-2);
-        }
-        if(Greenfoot.isKeyDown("Left")){
-            turn(2);
-        }
-        if(Greenfoot.isKeyDown("Down")){
-            move(-2);
-        } 
+        movement();
         die();
     }   
 
@@ -39,5 +28,20 @@ public class Jake extends Actor
             MyWorld w = (MyWorld)getWorld();
             w.removeObject(this);
         }
+    }
+    
+    public void movement(){
+        if(Greenfoot.isKeyDown("Up")){
+            move(2);
+        }
+        if(Greenfoot.isKeyDown("Right")){
+            turn(-2);
+        }
+        if(Greenfoot.isKeyDown("Left")){
+            turn(2);
+        }
+        if(Greenfoot.isKeyDown("Down")){
+            move(-2);
+        } 
     }
 }

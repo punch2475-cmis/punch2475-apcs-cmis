@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=Jake()
 comment3.params=
 comment3.target=void\ die()
-numComments=4
+comment4.params=
+comment4.target=void\ movement()
+numComments=5

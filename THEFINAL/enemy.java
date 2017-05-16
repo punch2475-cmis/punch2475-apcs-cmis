@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
-
+import java.util.*;
 public abstract class enemy extends Actor implements move
 {
     public abstract void movement();
@@ -30,7 +30,11 @@ public abstract class enemy extends Actor implements move
     public void setCountDown( int newCountDown){
         countDown = newCountDown;
     }
-
-
+    public enemy getEnergy(int range){
+        enemy target = null;
+        int Range = 50;
+        //List<enemy> enemies = getObjectsInRange(200, energy.class);
+    }
+    
     }
 

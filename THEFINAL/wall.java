@@ -20,22 +20,10 @@ public class wall extends Actor
         Jake jake = (Jake)getOneIntersectingObject(Jake.class);
 
         if(isTouching(Jake.class)){
-
-            String [] q = new String [] { "4+5" , "log10", "5+6-3+2+6+9+5-15", "5*6*9"};
-            int [] a = new int []  {9 , 1, 15 , 270};
-            int ai = Greenfoot.getRandomNumber(4);
-            for(int i =0; i < q.length; i++){
-                if( ai == i){
-                    String input1 = JOptionPane.showInputDialog(q[i]);
-                    int dec = Integer.parseInt(input1);
-                    int ans = a[i];
-                    if(dec == ans){
-                        System.out.println("1pts");
-                        break;
-                    }
-                }
-                
-            }
+            Question();
+            MyWorld w = (MyWorld)getWorld();
+            w.removeObject(this);
+ 
         }
     }    
     private GreenfootImage img;
@@ -56,6 +44,21 @@ public class wall extends Actor
     }
 
     public void Question(){
-
+        
+            String [] q = new String [] { "4+5" , "log10", "5+6-3+2+6+9+5-15", "5*6*9"};
+            int [] a = new int []  {9 , 1, 15 , 270};
+            int ai = Greenfoot.getRandomNumber(4);
+            for(int i =0; i < q.length; i++){
+                if( ai == i){
+                    String input1 = JOptionPane.showInputDialog(q[i]);
+                    int dec = Integer.parseInt(input1);
+                    int ans = a[i];
+                    if(dec == ans){
+                        System.out.println("1pts");
+                       
+                    }
+                }
+                 i = q.length;
+            }
     }
 }
