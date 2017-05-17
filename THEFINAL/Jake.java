@@ -31,17 +31,21 @@ public class Jake extends Actor implements move
     }
     
     public void movement(){
-        if(Greenfoot.isKeyDown("Up")){
+        if(Greenfoot.isKeyDown("Right")){
             move(2);
         }
-        if(Greenfoot.isKeyDown("Right")){
+        if(Greenfoot.isKeyDown("Down")){
             turn(-2);
         }
-        if(Greenfoot.isKeyDown("Left")){
+        if(Greenfoot.isKeyDown("Up")){
             turn(2);
         }
-        if(Greenfoot.isKeyDown("Down")){
+        if(Greenfoot.isKeyDown("Left")){
             move(-2);
         } 
+    }
+    
+    public void Touching(){
+        
     }
 }
