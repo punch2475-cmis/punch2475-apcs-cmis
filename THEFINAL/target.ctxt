@@ -4,4 +4,5 @@ comment1.params=
 comment1.target=target()
 comment2.params=
 comment2.target=void\ act()
+comment2.text=public\ void\ GETNUMfromWorld(){\n\ \ \ \ \ \ \ \ MyWorld\ w\ \=\ (MyWorld)getWorld();\n\ \ \ \ \ \ \ \ c\ \=\ w.getLevel();\n\ \ \ \ \ \ \ \ if(isTouching(Jake.class)){\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(c);\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \n}
 numComments=3

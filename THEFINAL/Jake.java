@@ -12,6 +12,7 @@ public class Jake extends Actor implements move
      * Act - do whatever the Jake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int TD;
     public void act() 
     {
         movement();
@@ -31,21 +32,23 @@ public class Jake extends Actor implements move
     }
     
     public void movement(){
-        if(Greenfoot.isKeyDown("Right")){
+        if(Greenfoot.isKeyDown("Up")){
             move(2);
         }
-        if(Greenfoot.isKeyDown("Down")){
+        if(Greenfoot.isKeyDown("Left")){
             turn(-2);
         }
-        if(Greenfoot.isKeyDown("Up")){
+        if(Greenfoot.isKeyDown("Right")){
             turn(2);
         }
-        if(Greenfoot.isKeyDown("Left")){
+        if(Greenfoot.isKeyDown("Down")){
             move(-2);
         } 
     }
     
     public void Touching(){
-        
+        if(isTouching(target.class)){
+            
+        }
     }
 }
