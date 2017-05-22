@@ -19,15 +19,17 @@ public class EB extends enemy
         // Add your action code here.
         movement();
     }   
+
     public EB(){
         super();
         img.setColor(Color.red);
         img.fillOval(0,0,20,20);
-        
+
         setImage(img);
     }
+
     public void movement(){
-            if(Math.random() > 0.95){
+        if(Math.random() > 0.95){
             randomMove = Greenfoot.getRandomNumber(4);
         }
         int X = 0;
@@ -41,19 +43,38 @@ public class EB extends enemy
         } else if ( randomMove == 3 ){
             X = 1; // right
         }
-             setLocation(getX() + X, getY() + Y);
-    }
-      public void touching(){
-          if(isTouching(Jake.class)){
-              int rn = Greenfoot.getRandomNumber(4);
-              if(rn > 2){
-                  System.out.println("Still Alive");
-                }
-                else {
-                    System.out.println("Died");
-                    
-                }
-              
+        setLocation(getX() + X, getY() + Y);
+
+        MyWorld w = (MyWorld)getWorld();
+        if( w.level > 3 && w.level < 5){
+            if ( randomMove == 0 ){
+                Y = -5; // down
+            } else if ( randomMove == 1 ){
+                Y = 5; // up 
+            } else if ( randomMove == 2 ){
+                X = -5; // left
+            } else if ( randomMove == 3 ){
+                X = 5; // right
             }
+            setLocation(getX() + X, getY() + Y);
         }
+    }
+
+    public void touching(){
+        if(isTouching(Jake.class)){
+            int rn = Greenfoot.getRandomNumber(4);
+            if(rn > 2){
+                System.out.println("Still Alive");
+            }
+            else {
+                System.out.println("Died");
+
+            }
+
+        }
+    }
+
+    public void speeding(){
+
+    }
 }

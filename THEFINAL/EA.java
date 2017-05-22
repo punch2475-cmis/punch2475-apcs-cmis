@@ -17,12 +17,12 @@ public class EA extends enemy
         GreenfootImage imgEA = getImg();
         int countDown1 = getCountDown();
     }
-   
+
     public void act() 
     {
         // Add your action code here.
         movement();
-        }
+    }
 
     public void movement(){
         if(Math.random() > 0.95){
@@ -39,12 +39,17 @@ public class EA extends enemy
         } else if ( randomMove == 3 ){
             X = 1; // right
         }
-             setLocation(getX() + X, getY() + Y);
-        }
-        public void touching(){
-            if(isTouching(Jake.class)){
-                System.out.println("TRY AGAIN");
-            }
+        setLocation(getX() + X, getY() + Y);
+    }
+
+    public void touching(){
+        if(isTouching(Jake.class)){
+            System.out.println("TRY AGAIN");
         }
     }
 
+    public void speeding(){
+
+    }
+
+}

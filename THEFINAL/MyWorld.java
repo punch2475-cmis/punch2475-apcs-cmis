@@ -18,7 +18,7 @@ public class MyWorld extends World
         }
         for(int i = 0; i < level; i++){
             if(getObjects(Jake.class).size() == 0){
-                addObject(new Jake(), 50,  Greenfoot.getRandomNumber(400));
+                addObject(new Jake(), 50,  150);
             }
         }
        
@@ -44,20 +44,25 @@ public class MyWorld extends World
                 intLevel(level++);
             }
         }*/
-        if(getObjects(diamond.class).size() == 0 && getObjects(target.class).size() == 0){
+       /* if(getObjects(diamond.class).size() == 0 && getObjects(target.class).size() == 0){
             intLevel(level++);
-        }
+        }*/
        
     }
 
     public void addTarget(){
         addObject(new target(), 550 , Greenfoot.getRandomNumber(400));
+     
     }
    
     public void adddiamond(){
         addObject(new diamond(), Greenfoot.getRandomNumber(300)+150, Greenfoot.getRandomNumber(150));
         addObject(new diamond(), Greenfoot.getRandomNumber(400)+150, Greenfoot.getRandomNumber(250));
         addObject(new diamond(), Greenfoot.getRandomNumber(550)+200, Greenfoot.getRandomNumber(375));
+        
+        for(int i =0; i < level; i++){
+            
+        }
     }
 
     public void addEnemy(){

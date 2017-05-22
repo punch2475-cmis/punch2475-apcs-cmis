@@ -19,11 +19,11 @@ public class target extends Actor
     {
         Jake jake = (Jake)getOneIntersectingObject(Jake.class);
         MyWorld w = (MyWorld)getWorld();
-        int k = w.getLevel();
        if(isTouching(Jake.class)){
             
             if(w.getObjects(diamond.class).size() == 0){
-              //w.intLevel(k)++; ASK NEXT TIME
+              w.intLevel(w.getLevel()+1); 
+              w.level++;
             }
  
         }

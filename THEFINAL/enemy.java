@@ -5,6 +5,7 @@ public abstract class enemy extends Actor implements move
 {
     public abstract void movement();
     public abstract void touching();
+    public abstract void speeding();
     public GreenfootImage img;
     public int countDown;
     public enemy(){
@@ -30,11 +31,11 @@ public abstract class enemy extends Actor implements move
     public void setCountDown( int newCountDown){
         countDown = newCountDown;
     }
-    public enemy getEnergy(int range){
+    /*public enemy getEnergy(int range){
         enemy target = null;
         int Range = 50;
         //List<enemy> enemies = getObjectsInRange(200, energy.class);
-    }
+    }*/
     
     }
 
