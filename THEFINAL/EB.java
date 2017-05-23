@@ -17,7 +17,7 @@ public class EB extends enemy
     public void act() 
     {
         // Add your action code here.
-        movement();
+        //movement();
     }   
 
     public EB(){
@@ -57,6 +57,24 @@ public class EB extends enemy
                 X = 5; // right
             }
             setLocation(getX() + X, getY() + Y);
+        }
+
+        if( isAtEdge() == true){
+            if( getX() < 10){
+                setLocation(600 ,getY());
+            }
+            else if(getY() < 10){
+                setLocation(getX() , 400);
+            }
+            //setLocation(600,100);
+            else if (getX() > 590){
+                setLocation(10, getY());
+            }
+            else {
+                setLocation(getX(), 10);
+            }
+            //turn(5);
+            //move(5);
         }
     }
 

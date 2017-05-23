@@ -21,7 +21,7 @@ public class EA extends enemy
     public void act() 
     {
         // Add your action code here.
-        movement();
+        //movement();
     }
 
     public void movement(){
@@ -40,6 +40,38 @@ public class EA extends enemy
             X = 1; // right
         }
         setLocation(getX() + X, getY() + Y);
+
+        MyWorld w = (MyWorld)getWorld();
+        if( w.level > 3 && w.level < 5){
+            if ( randomMove == 0 ){
+                Y = -5; // down
+            } else if ( randomMove == 1 ){
+                Y = 5; // up 
+            } else if ( randomMove == 2 ){
+                X = -5; // left
+            } else if ( randomMove == 3 ){
+                X = 5; // right
+            }
+            setLocation(getX() + X, getY() + Y);
+        }
+
+        if( isAtEdge() == true){
+            if( getX() < 10){
+                setLocation(600 ,getY());
+            }
+            else if(getY() < 10){
+                setLocation(getX() , 400);
+            }
+            //setLocation(600,100);
+            else if (getX() > 590){
+                setLocation(10, getY());
+            }
+            else {
+                setLocation(getX(), 10);
+            }
+            //turn(5);
+            //move(5);
+        }
     }
 
     public void touching(){
@@ -51,5 +83,6 @@ public class EA extends enemy
     public void speeding(){
 
     }
+
 
 }

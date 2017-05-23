@@ -2,7 +2,10 @@
 comment0.target=diamond
 comment0.text=\n\ Write\ a\ description\ of\ class\ wall\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=void\ act()
+comment1.target=void\ timer()
+comment1.text=private\ long\ startTime\ \=\ System.currentTimeMillis();\n\ \ \ \ private\ int\ durationSec;\n\ \ \ \ private\ long\ currentTime\ \=\ System.currentTimeMillis();\nprivate\ int\ duarationMilisec;
 comment2.params=
-comment2.target=diamond()
-numComments=3
+comment2.target=void\ act()
+comment3.params=
+comment3.target=diamond()
+numComments=4
