@@ -57,8 +57,8 @@ public class MyWorld extends World
     }
 
     public void addTarget(){
-        addObject(new target(), 550 , Greenfoot.getRandomNumber(400));
-        //addObject(new target(),200,200);
+        //addObject(new target(), 550 , Greenfoot.getRandomNumber(400));
+        addObject(new target(),200,200);
     }
 
     public void adddiamond(){
@@ -78,6 +78,7 @@ public class MyWorld extends World
     public void addEnemy(){
         addObject(new EA(),300,200);
         addObject(new EB(),300,100);
+        addObject(new EC(), 300, 150);
     }
 
     public void dd(){

@@ -21,7 +21,7 @@ public class EA extends enemy
     public void act() 
     {
         // Add your action code here.
-        //movement();
+        movement();
     }
 
     public void movement(){
@@ -31,26 +31,26 @@ public class EA extends enemy
         int X = 0;
         int Y = 0;
         if ( randomMove == 0 ){
-            Y = -1; // down
+            Y = -2; // down
         } else if ( randomMove == 1 ){
-            Y = 1; // up 
+            Y = 2; // up 
         } else if ( randomMove == 2 ){
-            X = -1; // left
+            X = -2; // left
         } else if ( randomMove == 3 ){
-            X = 1; // right
+            X = 2; // right
         }
         setLocation(getX() + X, getY() + Y);
 
         MyWorld w = (MyWorld)getWorld();
         if( w.level > 3 && w.level < 5){
             if ( randomMove == 0 ){
-                Y = -5; // down
+                Y = -4; // down
             } else if ( randomMove == 1 ){
-                Y = 5; // up 
+                Y = 4; // up 
             } else if ( randomMove == 2 ){
-                X = -5; // left
+                X = -4; // left
             } else if ( randomMove == 3 ){
-                X = 5; // right
+                X = 4; // right
             }
             setLocation(getX() + X, getY() + Y);
         }

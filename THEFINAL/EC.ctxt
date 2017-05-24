@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=EC
+comment0.text=\n\ Write\ a\ description\ of\ class\ EA\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=EC()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ movement()
+comment4.params=
+comment4.target=void\ touching()
+comment5.params=
+comment5.target=void\ speeding()
+numComments=6

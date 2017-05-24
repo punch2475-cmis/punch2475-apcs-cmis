@@ -1,32 +1,27 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
-
 /**
- * Write a description of class EB here.
+ * Write a description of class EA here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class EB extends enemy
+public class EC extends enemy
 {
     /**
-     * Act - do whatever the EB wants to do. This method is called whenever
+     * Act - do whatever the EA wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int randomMove;
+    public EC(){
+        GreenfootImage imgEA = getImg();
+        int countDown1 = getCountDown();
+    }
+
     public void act() 
     {
         // Add your action code here.
         movement();
-    }   
-
-    public EB(){
-        super();
-        img.setColor(Color.red);
-        img.fillOval(0,0,20,20);
-
-        setImage(img);
-        
     }
 
     public void movement(){
@@ -49,13 +44,13 @@ public class EB extends enemy
         MyWorld w = (MyWorld)getWorld();
         if( w.level > 3 && w.level < 5){
             if ( randomMove == 0 ){
-                Y = -3; // down
+                Y = -5; // down
             } else if ( randomMove == 1 ){
-                Y = 3; // up 
+                Y = 5; // up 
             } else if ( randomMove == 2 ){
-                X = -3; // left
+                X = -5; // left
             } else if ( randomMove == 3 ){
-                X = 3; // right
+                X = 5; // right
             }
             setLocation(getX() + X, getY() + Y);
         }
@@ -77,25 +72,17 @@ public class EB extends enemy
             //turn(5);
             //move(5);
         }
-        
-        
     }
 
     public void touching(){
         if(isTouching(Jake.class)){
-            int rn = Greenfoot.getRandomNumber(4);
-            if(rn > 2){
-                System.out.println("Still Alive");
-            }
-            else {
-                System.out.println("Died");
-
-            }
-
+            System.out.println("TRY AGAIN");
         }
     }
 
     public void speeding(){
 
     }
+
+
 }
