@@ -4,7 +4,6 @@ public class MyWorld extends World
 {
     public int level = 1;
 
-
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -37,9 +36,9 @@ public class MyWorld extends World
         level = newlevel;
     }
 
-
     public void act(){
         showText( "Level" + " " + level ,50,50);
+
         if(getObjects(Jake.class).size() == 0){
             dd();
         }
@@ -53,12 +52,10 @@ public class MyWorld extends World
         intLevel(level++);
         }*/
 
-
     }
-
     public void addTarget(){
-        //addObject(new target(), 550 , Greenfoot.getRandomNumber(400));
-        addObject(new target(),200,200);
+        addObject(new target(), 550 , Greenfoot.getRandomNumber(400));
+        //addObject(new target(),200,200);
     }
 
     public void adddiamond(){
@@ -86,5 +83,10 @@ public class MyWorld extends World
         Greenfoot.stop();
     }
 
+    public void stillAlive(){
+        /*if(Jake.eatEnergy() == 1){
+            
+        }*/
     
+    }
 }

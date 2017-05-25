@@ -13,24 +13,43 @@ public class Jake extends Actor implements move
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int TD;
+    public int power = 0;
     public void act() 
     {
         movement();
         die();
+        eatEnergy();
     }   
 
     public Jake(){
         GreenfootImage img = getImage();
         img.scale(img.getWidth()/4, img.getHeight()/4);
     }
-    
-    public void die(){
-        if(isTouching(enemy.class)){
-            MyWorld w = (MyWorld)getWorld();
-            w.removeObject(this);
+
+    public void eatEnergy(){
+        NE ne = (NE)getOneIntersectingObject(NE.class);
+
+        MyWorld w = (MyWorld)getWorld();
+        if(isTouching(NE.class)){
+            removeTouching(NE.class);
+            
         }
+        else{
+            
+        }
+
     }
-    
+    public void die(){
+        if(power == 0){
+            if(isTouching(enemy.class)){
+
+                MyWorld w = (MyWorld)getWorld();
+                w.removeObject(this);
+            }
+        }
+
+    }   
+
     public void movement(){
         if(Greenfoot.isKeyDown("Up")){
             move(2);
@@ -45,10 +64,9 @@ public class Jake extends Actor implements move
             move(-2);
         } 
     }
-    
+
     public void Touching(){
-        if(isTouching(target.class)){
-            
-        }
+
     }
+
 }
