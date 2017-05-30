@@ -32,24 +32,20 @@ public class Jake extends Actor implements move
         MyWorld w = (MyWorld)getWorld();
         if(isTouching(NE.class)){
             removeTouching(NE.class);
-            
-        }
-        else{
-            
+            power =100;
         }
 
     }
-    public void die(){
-        if(power == 0){
-            if(isTouching(enemy.class)){
 
-                MyWorld w = (MyWorld)getWorld();
-                w.removeObject(this);
-            }
+    public void die(){
+
+        if(isTouching(enemy.class)){
+
+            MyWorld w = (MyWorld)getWorld();
+            w.removeObject(this);
         }
 
     }   
-
     public void movement(){
         if(Greenfoot.isKeyDown("Up")){
             move(2);
