@@ -30,10 +30,10 @@ public class Jake extends Actor implements move
         NE ne = (NE)getOneIntersectingObject(NE.class);
 
         MyWorld w = (MyWorld)getWorld();
-        if(isTouching(NE.class)){
+        /*if(isTouching(NE.class)){
             removeTouching(NE.class);
             power =100;
-        }
+        }*/
 
     }
 

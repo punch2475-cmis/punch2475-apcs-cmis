@@ -36,7 +36,7 @@ public class EA extends enemy
             Y = 2; // up 
         } else if ( randomMove == 2 ){
             X = -2; // left
-        } else if ( randomMove == 3 ){
+        } else{
             X = 2; // right
         }
         setLocation(getX() + X, getY() + Y);

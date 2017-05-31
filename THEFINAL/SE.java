@@ -23,7 +23,7 @@ public class SE extends energy
         appear();
     }   
       public void appear(){
-        while( power == 0){
+        while( power <= 10){
              MyWorld w = (MyWorld)getWorld();
              //w.removeObject(this);
         }

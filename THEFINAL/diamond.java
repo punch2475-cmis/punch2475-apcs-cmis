@@ -15,6 +15,7 @@ public class diamond extends Actor
      */
     private int playerpick;
     private int ai;
+      MyWorld w = (MyWorld)getWorld();
     /*private long startTime = System.currentTimeMillis();
     private int durationSec;
     private long currentTime = System.currentTimeMillis();
@@ -71,7 +72,13 @@ public class diamond extends Actor
         GreenfootImage img = getImage();
         img.scale(img.getWidth()/8, img.getHeight()/8);
     }
-
+    public static void main (String[] arg){
+        String diamond1 = "eaten";
+       
+       /* if(w.Diamond() == 0){
+            System.out.println(diamond1);
+        }*/
+    }
 }
 /*public void Question(){
 String [] q = new String [] { "4+5" , "log10", "5+6-3+2+6+9+5-15", "5*6*9"};
